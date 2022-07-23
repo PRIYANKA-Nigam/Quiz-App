@@ -1,212 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/idraw"
     tools:context=".StartQuizActivity">
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="264dp"
-        android:layout_height="122dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="end"
-        android:layout_marginBottom="50dp"
-        android:text="START QUIZ"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="427dp" />
-
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+    <include layout="@layout/main_toolbar" />
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="374dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="100dp"
+        android:layout_width="397sp"
+        android:layout_height="709sp"
+        android:layout_marginRight="10sp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="196sp"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:text="@string/instructions"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
+            android:layout_height="374sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70sp"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:text="Don't press F5. It will end your test ."
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/f5" />
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Don't press F5. It will end your test ."
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/f5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="The test to be completed within the alloted time"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/timer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Do not switch between apps"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/s" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="You can't navigate to the previous question"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Result will be displayed at the end of the test"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/result" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Taking screenshot not allowed during the test"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ss" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="There is no negative marking in the test"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="45sp"
+                    android:layout_marginRight="35sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/minus" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="The test to be completed within the alloted time"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/timer" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Do not switch between apps"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/s" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="You can't navigate to the previous question"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/back" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Result will be displayed at the end of the test"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/result" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Taking screenshot not allowed during the test"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/ss" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_gravity="center_vertical"
-            android:background="@android:color/black"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="There is no negative marking in the test"
-                android:textColor="#ffffff"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="43dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:src="@drawable/minus" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="264sp"
+            android:layout_height="122sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15sp"
+            android:text="START QUIZ"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="196dp"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="@string/instructions"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
-        android:textStyle="bold" />
-
-
-</RelativeLayout>
+      </LinearLayout>
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <include layout="@layout/main_nav_drawer"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

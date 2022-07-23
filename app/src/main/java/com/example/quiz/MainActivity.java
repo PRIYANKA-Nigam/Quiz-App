@@ -1,8 +1,16 @@
 package com.example.quiz;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -20,14 +28,37 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity { DrawerLayout drawerLayout;
 TextView textView,textView2,textView3; List<Questions> list;
 int count=0;
-Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
+Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
+    public static void logout(final HistoryActivity historyActivity) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+               historyActivity.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
+    public static void logout(final StartQuizActivity mainActivity3) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                mainActivity3.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        drawerLayout=(DrawerLayout)findViewById(R.id.draw);
         textView=findViewById(R.id.tt);
         textView2=findViewById(R.id.textView4);
         textView3=findViewById(R.id.textView5);
@@ -84,6 +115,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
                     Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
+                    intent.putExtra("skip",s);
                     startActivity(intent);
                    // finish();
                 }
@@ -105,6 +137,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
                     Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
+                    intent.putExtra("skip",s);
                     startActivity(intent);
                   //  finish();
                 }
@@ -127,6 +160,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
                     Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
+                    intent.putExtra("skip",s);
                     startActivity(intent);
                   // finish();
                 }
@@ -149,6 +183,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
                     Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
+                    intent.putExtra("skip",s);
                     startActivity(intent);
                    // finish();
                 }
@@ -201,4 +236,46 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0;
         }
         return json;
     }
+
+    public void skip(View view) { s++;
+        if (correct<list.size()-1){
+            correct++;setScreen(correct);
+        }else {
+            Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+            intent.putExtra("correct",c);
+            intent.putExtra("wrong",w);
+            intent.putExtra("skip",s);
+            startActivity(intent);
+            // finish();
+        }
+    }
+    public void ClickMenu(View view){
+        openDrawer(drawerLayout);
+    }
+    public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }
+    public void ClickLogo(View view){
+        closeDrawer(drawerLayout);
+    }
+    public static void closeDrawer(DrawerLayout drawerLayout) { if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+        drawerLayout.closeDrawer(GravityCompat.START); } }
+    public void ClickHome(View view){
+        recreate();
+    }
+    public void ClickInstructions(View view){redirectActivity(this,StartQuizActivity.class);}
+    public void ClickHistory(View view){redirectActivity(this,HistoryActivity.class);}
+    public void ClickLogout(View view){
+        logout(this);
+    }
+
+    public static void logout(final MainActivity mainActivity) { AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity);
+        builder.setTitle("Logout");builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                mainActivity.finishAffinity();System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() { @Override
+        public void onClick(DialogInterface dialog, int which) { dialog.dismiss(); }}); builder.show(); }
+    public static void redirectActivity(Activity activity, Class aclass) { Intent intent=new Intent(activity,aclass);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); activity.startActivity(intent); } @Override
+    protected void onPause() { super.onPause(); closeDrawer(drawerLayout); }
 }

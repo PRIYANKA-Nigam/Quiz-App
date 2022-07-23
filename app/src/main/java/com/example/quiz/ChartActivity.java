@@ -29,6 +29,7 @@ public class ChartActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String a = intent.getStringExtra("c");
         String b = intent.getStringExtra("w");
+        String c=intent.getStringExtra("s");
         int pos=intent.getIntExtra("pos",0);
         Image image=new Image(this);
         imageView.setImageResource(image.image[pos]);
@@ -36,9 +37,9 @@ public class ChartActivity extends AppCompatActivity {
         ac =new ArrayList<>();
         bc=new ArrayList<>();
         ac.add(Integer.parseInt(a));
-        ac.add(Integer.parseInt(b));
+        ac.add(Integer.parseInt(b));  ac.add(Integer.parseInt(c));
         bc.add("correct");
-        bc.add("wrong");
+        bc.add("wrong");   bc.add("skipped");
         pieset();
 
     }
@@ -56,7 +57,7 @@ public class ChartActivity extends AppCompatActivity {
         ArrayList<Integer> c = new ArrayList<>();
         c.add(Color.GREEN);
         c.add(Color.RED);
-        c.add(Color.BLACK);
+        c.add(Color.YELLOW);
         pieDataSet.setColors(c);
         Legend legend = pieChart.getLegend();
         legend.setForm(Legend.LegendForm.CIRCLE);

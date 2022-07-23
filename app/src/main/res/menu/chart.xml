@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <item android:id="@+id/graph"
-    android:icon="@drawable/b"
+    android:icon="@drawable/bar"
     android:title="Show in Bar Format"
     app:showAsAction="always"/>
     <item android:id="@+id/chart"
-        android:icon="@drawable/a"
+        android:icon="@drawable/pie"
         android:title="Show in Chart Format"
         app:showAsAction="always"/>
 </menu>
