@@ -11,18 +11,16 @@ import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
 TextView textView; Animation animation;
-ImageView i1,i2;
+ImageView i1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         textView=findViewById(R.id.textView2);
-        i1=findViewById(R.id.imageView2);
-        i2=findViewById(R.id.imageView3);
+        i1=findViewById(R.id.imageView3);
         animation   = AnimationUtils.loadAnimation(this,R.anim.splash);
         textView.startAnimation(animation);
         i1.startAnimation(animation);
-        i2.startAnimation(animation);
         final Intent intent=new Intent(this,StartQuizActivity.class);
         Thread timer=new Thread(){
             public void run(){

@@ -21,18 +21,12 @@
         android:textSize="70dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="391dp"
-        android:layout_height="180dp"
-        android:layout_below="@+id/imageView3"
-        app:srcCompat="@drawable/quiz2" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="397dp"
+        android:layout_width="399dp"
+        android:layout_height="399dp"
         android:layout_below="@+id/textView2"
-        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="18dp"
         app:srcCompat="@drawable/quiz1" />
