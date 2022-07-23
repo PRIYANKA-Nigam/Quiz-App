@@ -1,0 +1,68 @@
+{
+  "response": [
+    {
+      "question": "Which car manufacturer was the first to win 100 F1 races?",
+      "option1": "Ferrari",
+      "option2": "Nissan",
+      "option3": "Ford",
+      "option4": "Tata",
+      "answer": "Ferrari."
+    },
+    {
+      "question": "In the professional era which woman has won the most titles at Wimbledon [singles, doubles and mixed] ?",
+      "option1": "Venus",
+      "option2": "Hingis",
+      "option3": "Martina Navratilova",
+      "option4": "Waynetta",
+      "answer": "Martina Navratilova"
+    },
+    {
+      "question": "How many times have Liverpool been relegated from the top flight of English football?",
+      "option1": "Four",
+      "option2": "Three",
+      "option3": "Two",
+      "option4": "Five",
+      "answer": "Three"
+    },
+    {
+      "question": "What is the scientific name of a butterfly?",
+      "option1":  "Apis",
+      "option2":  "Coleoptera",
+      "option3":  "Formicidae",
+      "option4": "Rhopalocera",
+      "answer": "Formicidae"
+    },
+    {
+      "question": "How hot is the surface of the sun?",
+      "option1":  "1,233 K",
+      "option2": "5,778 K",
+      "option3":"12,130 K",
+      "option4":  "101,300 K",
+      "answer": "1,233 K"
+    },
+    {
+      "question": "Who are the actors in The Internship?",
+      "option1":  "Ben Stiller, Jonah Hill",
+      "option2": "Courteney Cox, Matt LeBlanc",
+      "option3": "Kaley Cuoco, Jim Parsons",
+      "option4": "Vince Vaughn, Owen Wilson",
+      "answer": "Kaley Cuoco, Jim Parsons"
+    },
+    {
+      "question": "What is the capital of Spain?",
+      "option1": "Berlin",
+      "option2":"Buenos Aires",
+      "option3": "Madrid",
+      "option4":"San Juan",
+      "answer": "Buenos Aires"
+    },
+    {
+      "question": "What are the school colors of the University of Texas at Austin?",
+      "option1":  "Black, Red",
+      "option2":  "Blue, Orange",
+      "option3":  "White, Burnt Orange",
+      "option4": "White, Old gold, Gold",
+      "answer":  "Blue, Orange"
+    }
+  ]
+}
