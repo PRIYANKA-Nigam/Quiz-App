@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd"
+        android:layout_width="match_parent"
+        android:layout_height="279dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

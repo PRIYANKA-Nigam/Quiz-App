@@ -27,10 +27,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity { DrawerLayout drawerLayout;
 TextView textView,textView2,textView3; List<Questions> list;
-int count=0;
+static int len =0;
+int count=0; Timer timer;
 Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
     public static void logout(final HistoryActivity historyActivity) {
         AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
@@ -62,6 +65,19 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
         textView=findViewById(R.id.tt);
         textView2=findViewById(R.id.textView4);
         textView3=findViewById(R.id.textView5);
+        timer=new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Intent intent=new Intent(MainActivity.this,TimesUpActivity.class);
+                intent.putExtra("correct",c);
+                intent.putExtra("wrong",w);
+                intent.putExtra("skip",s);
+                intent.putExtra("len",len);
+                startActivity(intent);
+                finish();
+            }
+        },30000);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE); //SS NOT ALLOWED
         Thread t =new Thread(){
             @Override
@@ -116,6 +132,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
+                    intent.putExtra("len",len);
                     startActivity(intent);
                    // finish();
                 }
@@ -138,6 +155,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
+                    intent.putExtra("len",len);
                     startActivity(intent);
                   //  finish();
                 }
@@ -161,6 +179,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
+                    intent.putExtra("len",len);
                     startActivity(intent);
                   // finish();
                 }
@@ -184,6 +203,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
+                    intent.putExtra("len",len);
                     startActivity(intent);
                    // finish();
                 }
@@ -207,6 +227,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
      try{
             JSONObject jsonObject = new JSONObject(jsonstr);
             JSONArray jsonArray = jsonObject.getJSONArray("response");
+            len=jsonArray.length();
             for (int i=0;i<jsonArray.length();i++){
                 JSONObject question =jsonArray.getJSONObject(i);
                 String quesString =question.getString("question");
@@ -245,6 +266,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
             intent.putExtra("correct",c);
             intent.putExtra("wrong",w);
             intent.putExtra("skip",s);
+            intent.putExtra("len",len);
             startActivity(intent);
             // finish();
         }

@@ -30,18 +30,16 @@ ImageView imageView;int flag=0;
         b1=findViewById(R.id.button5);
         b2=findViewById(R.id.button6);
         b3=findViewById(R.id.button8);
-        Intent intent=getIntent();
-        int c= intent.getIntExtra("correct",0);
-        int w =intent.getIntExtra("wrong",0);
-        int s =intent.getIntExtra("skip",0);
+        SharedPreferences sharedPreferences=getSharedPreferences("times", Context.MODE_PRIVATE);
+        String ct=sharedPreferences.getString("ct",null);
+        String wt=sharedPreferences.getString("wt",null);
+        String st=sharedPreferences.getString("st",null);
+        String length=sharedPreferences.getString("len",null);
+        int c=Integer.parseInt(ct);int w=Integer.parseInt(wt);int s=Integer.parseInt(st); int len=Integer.parseInt(length);
         b1.setText("Correct :"+c);
         b2.setText("Wrong :"+w); b3.setText("Skipped :"+s);
-        SharedPreferences sh =getSharedPreferences("chart", Context.MODE_PRIVATE);
-        sh.edit().putString("right", String.valueOf(c)).putString("wrong", String.valueOf(w)).putString("skip", String.valueOf(s)).apply();
-
-        Toast.makeText(this,"Your Result is saved .",Toast.LENGTH_SHORT).show();
-        int p =((c*100)/(c+w));
-        textView.setText(" "+p);
+        int p =((c*100)/len);
+        textView.setText(" "+p+"%");
         if (p>50) {
             imageView.setImageResource(R.drawable.pass);
             flag=0;
@@ -50,6 +48,12 @@ ImageView imageView;int flag=0;
             imageView.setImageResource(R.drawable.fail);
             flag=1;
         }
+        SharedPreferences sh =getSharedPreferences("chart", Context.MODE_PRIVATE);
+        sh.edit().putString("right", String.valueOf(c)).putString("wrong", String.valueOf(w))
+                .putString("skip", String.valueOf(s)).putString("perc", String.valueOf(p)).putString("pos", String.valueOf(flag)).apply();
+
+        Toast.makeText(this,"Your Result is saved .",Toast.LENGTH_SHORT).show();
+
 
     }
 
