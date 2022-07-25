@@ -30,12 +30,13 @@ ImageView imageView;int flag=0;
         b1=findViewById(R.id.button5);
         b2=findViewById(R.id.button6);
         b3=findViewById(R.id.button8);
+
         SharedPreferences sharedPreferences=getSharedPreferences("times", Context.MODE_PRIVATE);
         String ct=sharedPreferences.getString("ct",null);
         String wt=sharedPreferences.getString("wt",null);
         String st=sharedPreferences.getString("st",null);
         String length=sharedPreferences.getString("len",null);
-        int c=Integer.parseInt(ct);int w=Integer.parseInt(wt);int s=Integer.parseInt(st); int len=Integer.parseInt(length);
+       int  c=Integer.parseInt(ct);int w=Integer.parseInt(wt);int s=Integer.parseInt(st); int len=Integer.parseInt(length);
         b1.setText("Correct :"+c);
         b2.setText("Wrong :"+w); b3.setText("Skipped :"+s);
         int p =((c*100)/len);
@@ -59,6 +60,7 @@ ImageView imageView;int flag=0;
 
     public void exit(View view) {
         System.exit(0);
+        finish();
     }
 
     @Override

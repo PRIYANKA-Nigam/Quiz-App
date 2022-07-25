@@ -25,16 +25,18 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         drawerLayout=findViewById(R.id.hdraw);
-        SharedPreferences sh =getSharedPreferences("chart", Context.MODE_PRIVATE);
-        String s1=  sh.getString("right",null);
-        String s2=  sh.getString("wrong",null);
-        String s3=  sh.getString("skip",null);
-        String s4=  sh.getString("perc",null);
-        String s5=  sh.getString("pos",null);
-        if(s5.equals("0"))
-            s5="pass";
-        else
-            s5="fail";
+       try {
+            SharedPreferences sh = getSharedPreferences("chart", Context.MODE_PRIVATE);
+            String s1 = sh.getString("right", null);
+            String s2 = sh.getString("wrong", null);
+            String s3 = sh.getString("skip", null);
+            String s4 = sh.getString("perc", null);
+            String s5 = sh.getString("pos", null);
+            if (s5.equals("0"))
+                s5 = "pass";
+            else
+                s5 = "fail";
+
         list=new ArrayList<>();
         layoutManager=new LinearLayoutManager(this);
         Image image=new Image(this);
@@ -46,7 +48,9 @@ public class HistoryActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
       //  recyclerView.invalidate(); or
         adapter.notifyDataSetChanged();
-
+       } catch (NullPointerException e){
+           e.printStackTrace();
+       }
 
     }
     public void ClickMenu(View view){

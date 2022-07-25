@@ -31,10 +31,11 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity { DrawerLayout drawerLayout;
-TextView textView,textView2,textView3; List<Questions> list;
+TextView textView,textView2,textView3,textView4; List<Questions> list;
 static int len =0;
-int count=0; Timer timer;
-Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
+int count=0;static Timer timer;
+Button b1,b2,b3,b4; static int correct =0; static int  c=0,w=0,s=0;
+  //  private SharedPref sharedPref;
     public static void logout(final HistoryActivity historyActivity) {
         AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
         builder.setMessage("Are You Sure You Want to Logout ?");
@@ -57,30 +58,40 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss(); }});builder.show(); }
+    public static void logout(final DarkModeActivity darkModeActivity) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(darkModeActivity);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                darkModeActivity.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        sharedPref =new SharedPref(this);
+//        if (sharedPref.loadDarkModeState()){
+//            setTheme(R.style.SettingsDark);
+//        }else {
+//            setTheme(R.style.SettingsLight);
+//
+//        }
         drawerLayout=(DrawerLayout)findViewById(R.id.draw);
         textView=findViewById(R.id.tt);
         textView2=findViewById(R.id.textView4);
         textView3=findViewById(R.id.textView5);
+        textView4=findViewById(R.id.textt);
         timer=new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Intent intent=new Intent(MainActivity.this,TimesUpActivity.class);
-                intent.putExtra("correct",c);
-                intent.putExtra("wrong",w);
-                intent.putExtra("skip",s);
-                intent.putExtra("len",len);
-                startActivity(intent);
-                finish();
-            }
-        },30000);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE); //SS NOT ALLOWED
         Thread t =new Thread(){
-            @Override
+            @Override                                   //Thread class is used only to update the count value & start loading the questions .
+                                                       // t.stop was unable to stop the thread (it is deprecated)  hence used Timer inside the thread class which will
+                                                        // stop the test as per the alloted time
+                                                      //and we also cancelled the timer in the next activity. CountDownTimer can also be used in place of timer.
             public void run() {
                 while (!isInterrupted()){
                     try {
@@ -101,14 +112,26 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
         };
         textView3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { c=0;w=0;s=0;
                 t.start();
                 LoadQuestions();
                 Collections.shuffle(list);
                 setScreen(correct);
-                if (count>60)
-                    t.stop();
-            }
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(MainActivity.this, TimesUpActivity.class);
+                        intent.putExtra("correct", c);
+                        intent.putExtra("wrong", w);
+                        intent.putExtra("skip", s);
+                        intent.putExtra("len", len);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                },30000);
+        }
+
         });
         b1=findViewById(R.id.button);
         b2=findViewById(R.id.button2);
@@ -117,7 +140,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { textView4.setText(""+correct);
               if (list.get(correct).getAnswer1().equals(list.get(correct).getCorrect())) {
                   c++;
                   Toast.makeText(MainActivity.this, "Correct !!!", Toast.LENGTH_SHORT).show();
@@ -126,21 +149,22 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                   Toast.makeText(MainActivity.this, "Wrong , Correct Answer is -"+list.get(correct).getCorrect(), Toast.LENGTH_SHORT).show();
               }
                 if (correct<list.size()-1){
-                    correct++;setScreen(correct);
+                    correct++; textView4.setText(""+correct);
+                    setScreen(correct);
                 }else {
-                    Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),TestCompleteActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
                     intent.putExtra("len",len);
                     startActivity(intent);
-                   // finish();
+                    finish();
                 }
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { textView4.setText(""+correct);
                 if (list.get(correct).getAnswer2().equals(list.get(correct).getCorrect())) {
                     c++;
                     Toast.makeText(MainActivity.this, "Correct !!!", Toast.LENGTH_SHORT).show();
@@ -149,22 +173,23 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     Toast.makeText(MainActivity.this, "Wrong , Correct Answer is -"+list.get(correct).getCorrect(), Toast.LENGTH_SHORT).show();
                 }
                 if (correct<list.size()-1){
-                    correct++;setScreen(correct);
+                    correct++; textView4.setText(""+correct);
+                    setScreen(correct);
                 }else {
-                    Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),TestCompleteActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
                     intent.putExtra("len",len);
                     startActivity(intent);
-                  //  finish();
+                    finish();
                 }
 
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { textView4.setText(""+correct);
                 if (list.get(correct).getAnswer3().equals(list.get(correct).getCorrect())) {
                     c++;
                     Toast.makeText(MainActivity.this, "Correct !!!", Toast.LENGTH_SHORT).show();
@@ -173,22 +198,23 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     Toast.makeText(MainActivity.this, "Wrong , Correct Answer is -"+list.get(correct).getCorrect(), Toast.LENGTH_SHORT).show();
                 }
                 if (correct<list.size()-1){
-                    correct++;setScreen(correct);
+                    correct++; textView4.setText(""+correct);
+                    setScreen(correct);
                 }else {
-                    Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),TestCompleteActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
                     intent.putExtra("len",len);
                     startActivity(intent);
-                  // finish();
+                   finish();
                 }
 
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { textView4.setText(""+correct);
                 if (list.get(correct).getAnswer4().equals(list.get(correct).getCorrect())) {
                     c++;
                     Toast.makeText(MainActivity.this, "Correct !!!", Toast.LENGTH_SHORT).show();
@@ -197,15 +223,16 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
                     Toast.makeText(MainActivity.this, "Wrong !!! , \n\n Correct Answer is -"+list.get(correct).getCorrect(), Toast.LENGTH_SHORT).show();
                 }
                 if (correct<list.size()-1){
-                    correct++;setScreen(correct);
+                    correct++; textView4.setText(""+correct);
+                    setScreen(correct);
                 }else {
-                    Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+                    Intent intent=new Intent(getApplicationContext(),TestCompleteActivity.class);
                     intent.putExtra("correct",c);
                     intent.putExtra("wrong",w);
                     intent.putExtra("skip",s);
                     intent.putExtra("len",len);
                     startActivity(intent);
-                   // finish();
+                    finish();
                 }
 
             }
@@ -260,20 +287,19 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
 
     public void skip(View view) { s++;
         if (correct<list.size()-1){
-            correct++;setScreen(correct);
+            correct++; textView4.setText(""+correct);
+            setScreen(correct);
         }else {
-            Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
+            Intent intent=new Intent(getApplicationContext(),TestCompleteActivity.class);
             intent.putExtra("correct",c);
             intent.putExtra("wrong",w);
             intent.putExtra("skip",s);
             intent.putExtra("len",len);
             startActivity(intent);
-            // finish();
+             finish();
         }
     }
-    public void ClickMenu(View view){
-        openDrawer(drawerLayout);
-    }
+    public void ClickMenu(View view){ openDrawer(drawerLayout); }
     public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }
     public void ClickLogo(View view){
         closeDrawer(drawerLayout);
@@ -285,6 +311,7 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
     }
     public void ClickInstructions(View view){redirectActivity(this,StartQuizActivity.class);}
     public void ClickHistory(View view){redirectActivity(this,HistoryActivity.class);}
+    public void ClickDark(View view){redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
         logout(this);
     }
@@ -300,4 +327,6 @@ Button b1,b2,b3,b4; int correct =0; static int  c=0,w=0,s=0;
     public static void redirectActivity(Activity activity, Class aclass) { Intent intent=new Intent(activity,aclass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); activity.startActivity(intent); } @Override
     protected void onPause() { super.onPause(); closeDrawer(drawerLayout); }
+
+
 }
