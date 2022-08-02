@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,9 +18,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+
 public class ResultActivity extends AppCompatActivity {
-TextView textView;
-ImageView imageView;int flag=0;
+TextView textView; ArrayList<String> list=new ArrayList<>();
+ImageView imageView;int flag=0; String news="",col="";
     Button b1,b2,b3; static  int percentage=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +56,8 @@ ImageView imageView;int flag=0;
         }
         SharedPreferences sh =getSharedPreferences("chart", Context.MODE_PRIVATE);
         sh.edit().putString("right", String.valueOf(c)).putString("wrong", String.valueOf(w))
-                .putString("skip", String.valueOf(s)).putString("perc", String.valueOf(p)).putString("pos", String.valueOf(flag)).apply();
+                .putString("skip", String.valueOf(s)).putString("perc", String.valueOf(p)).putString("pos", String.valueOf(flag))
+                .putString("colo",col).apply();
 
         Toast.makeText(this,"Your Result is saved .",Toast.LENGTH_SHORT).show();
 
@@ -59,6 +65,26 @@ ImageView imageView;int flag=0;
     }
 
     public void exit(View view) {
+
+        SharedPreferences sh =getSharedPreferences("chart", Context.MODE_PRIVATE);
+        String s1=  sh.getString("right",null);
+        String s2=  sh.getString("wrong",null);
+        String s3=  sh.getString("skip",null);
+        String perc=sh.getString("perc",null);
+        String flag=sh.getString("pos",null);
+        Calendar calendar =Calendar.getInstance();
+        String curDate= DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+        if (flag.equals("0"))
+        news="Correct: "+s1+"\n"+"-------------------- \n"+"Incorrect: "+s2+"\n"+"--------------------- \n"+"Skipped: "+s3+"\n"+"------------------------ \n"+"Percentage: "
+                +perc+"%"+"\n"+"---------------------\n"+"Status: Pass             ("+curDate+")";
+        else
+            news="Correct: "+s1+"\n"+"---------- \n"+"Incorrect: "+s2+"\n"+"----------- \n"+"Skipped: "+s3+"\n"+"------------- \n"+"Percentage: "
+                    +perc+"%"+"\n"+"--------------------\n"+"Status: Fail                ("+curDate+")";
+        list.add(news);
+        Intent intent=new Intent(getApplicationContext(),HistoryActivity.class);
+        intent.putStringArrayListExtra("quote", list);
+        Toast.makeText(getApplicationContext(),"Report passed to Result History Page ...",Toast.LENGTH_SHORT).show();
+        startActivity(intent);
         System.exit(0);
         finish();
     }

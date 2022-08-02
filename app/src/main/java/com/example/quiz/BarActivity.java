@@ -1,10 +1,14 @@
 package com.example.quiz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -56,5 +60,23 @@ BarChart barChart; ImageView imageView;
         for(int i=0;i<ac.size();i++)
             datavals.add(new BarEntry(i,ac.get(i)));
         return datavals;
+    }
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        MenuInflater menuInflater =getMenuInflater();
+        menuInflater.inflate(R.menu.dark_bright,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.dark:
+                startActivity(new Intent(getApplicationContext(),DarkModeActivity.class));return  true;
+            case R.id.bright:
+                startActivity(new Intent(getApplicationContext(),BrightnessActivity.class));return  true;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

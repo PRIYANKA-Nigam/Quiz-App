@@ -4,5 +4,5 @@
     <attr name="cardViewBackground" format="color"/>
         <attr name="primaryTextColor" format="color"/>
     <attr name="secondaryTextColor" format="color"/>
-
+    <attr name="LinearLayoutColor" format="color"/>
 </resources>

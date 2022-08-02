@@ -1,5 +1,6 @@
 package com.example.quiz;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -9,9 +10,13 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -26,6 +31,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -298,6 +304,24 @@ Button b1,b2,b3,b4; static int correct =0; static int  c=0,w=0,s=0;
             startActivity(intent);
              finish();
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        MenuInflater menuInflater =getMenuInflater();
+        menuInflater.inflate(R.menu.dark_bright,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.dark:
+                startActivity(new Intent(getApplicationContext(),DarkModeActivity.class));return  true;
+            case R.id.bright:
+                startActivity(new Intent(getApplicationContext(),BrightnessActivity.class));return  true;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
     public void ClickMenu(View view){ openDrawer(drawerLayout); }
     public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }

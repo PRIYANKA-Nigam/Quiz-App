@@ -2,6 +2,7 @@ package com.example.quiz;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -14,59 +15,37 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.Switch;
 
 public class DarkModeActivity extends AppCompatActivity {
 CardView cardView; Switch aSwitch; DrawerLayout drawerLayout;
-private SharedPref sharedPref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        sharedPref =new SharedPref(this);
-//        if (sharedPref.loadDarkModeState()){
-//            setTheme(R.style.SettingsDark);
-//        }else {
-//            setTheme(R.style.SettingsLight);
-//
-//        }
+        if (AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES){
+            setTheme(R.style.Theme_Dark);
+        }else {
+            setTheme(R.style.Theme_Light);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dark_mode);
         drawerLayout=(DrawerLayout)findViewById(R.id.dadraw);
         cardView =findViewById(R.id.cdd);
         aSwitch=findViewById(R.id.swit);
-        if (sharedPref.loadDarkModeState()){
-            aSwitch.setChecked(true);
-        }
-        aSwitch.setClickable(false);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!aSwitch.isChecked()){
-                    aSwitch.setChecked(true);
-                    sharedPref.setDarkModeState(true);
-                    restartApp();
-                }else {
-                    aSwitch.setChecked(false);
-                    sharedPref.setDarkModeState(false);
-                    restartApp();
-                }
-            }
-        });
+       aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+           @Override
+           public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+               if (isChecked){
+                   AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+               }else {
+                   AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+               }
+           }
+       });
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    private void restartApp() {
-        Intent intent=new Intent(getApplicationContext(),DarkModeActivity.class);
-        startActivity(intent);
-        finish();
-    }
     public void ClickMenu(View view){ openDrawer(drawerLayout); }
     public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }
     public void ClickLogo(View view){

@@ -2,4 +2,6 @@
     <string name="app_name">Quiz</string>
     <string name="result"><u>Result</u> !!</string>
     <string name="instructions"><u>Instructions</u></string>
+    <string name="dark"><u>Toggle Up the Switch to Apply Theme</u></string>
+    <string name="control_screen_brightness"><u>SET Screen Brightness</u></string>
 </resources>

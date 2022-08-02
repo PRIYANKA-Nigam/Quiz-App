@@ -1,11 +1,15 @@
 package com.example.quiz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class TestCompleteActivity extends AppCompatActivity {
@@ -30,5 +34,23 @@ public class TestCompleteActivity extends AppCompatActivity {
         Intent intent =new Intent(this,ResultActivity.class);
         startActivity(intent);
         finish();
+    }
+    @Override
+    public boolean onCreateOptionsMenu(@NonNull Menu menu) {
+        MenuInflater menuInflater =getMenuInflater();
+        menuInflater.inflate(R.menu.dark_bright,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.dark:
+                startActivity(new Intent(getApplicationContext(),DarkModeActivity.class));return  true;
+            case R.id.bright:
+                startActivity(new Intent(getApplicationContext(),BrightnessActivity.class));return  true;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
