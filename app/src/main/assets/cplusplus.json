@@ -1,0 +1,68 @@
+{
+  "response": [
+    {
+      "question": "Identify the incorrect constructor type.",
+      "option1": "Friend Constructor",
+      "option2": "Default Constructor",
+      "option3": "Parameterised Constructor",
+      "option4": "Copy Constructor",
+      "answer": "Friend Constructor"
+    },
+    {
+      "question": "C++ uses which approach?",
+      "option1": "right -left",
+      "option2": "top -down",
+      "option3": "left -right",
+      "option4": "bottom -up",
+      "answer": "bottom -up"
+    },
+    {
+      "question": "Which of the following data type is supported in C++ but not in C?",
+      "option1": "int",
+      "option2": "bool",
+      "option3": "double",
+      "option4": "float",
+      "answer": "bool"
+    },
+    {
+      "question": "Identify the correct syntax for declaring arrays in C++.",
+      "option1":  "array arr[10]",
+      "option2":  "array[10]",
+      "option3":  "int arr[10]",
+      "option4": "int arr",
+      "answer": "int arr[10]"
+    },
+    {
+      "question": "Which of the following loops is best when we know the number of iterations?",
+      "option1":  "for loop",
+      "option2": "while loop",
+      "option3":"do while loop",
+      "option4":  "none of the above",
+      "answer": "for loop"
+    },
+    {
+      "question": "goto can be classified into?",
+      "option1":  "label",
+      "option2": "variable",
+      "option3": "operator",
+      "option4": "function",
+      "answer": "label"
+    },
+    {
+      "question": "Identify the correct definition of ‘*’ operator in pointer.",
+      "option1": "Address Operator",
+      "option2":"Value of address operator",
+      "option3": "Multiplication operator",
+      "option4":"All of the above",
+      "answer": "Value of address operator"
+    },
+    {
+      "question": "By which of the following can the if-else statement be replaced?",
+      "option1":  "bitwise operator",
+      "option2":  "logical operator",
+      "option3":  "conditional operator",
+      "option4": "Arithmatic operator",
+      "answer":  "conditional operator"
+    }
+  ]
+}

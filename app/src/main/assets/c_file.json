@@ -1,0 +1,100 @@
+{
+  "response": [
+    {
+      "question": "What is the range of values that can be stored by int datatype in C?",
+      "option1": "-(2^31) to (2^31) - 1",
+      "option2": "-256 to 255",
+      "option3": "-(2^63) to (2^63) - 1",
+      "option4": "0 to (2^31) -1",
+      "answer": "-(2^31) to (2^31) - 1"
+    },
+    {
+      "question": "How is the 3rd element in an array accessed based on pointer notation?",
+      "option1": "*a+3",
+      "option2": "*(a+3)",
+      "option3": "*(*a+3)",
+      "option4": "&(a+3)",
+      "answer": "*(a+3)"
+    },
+    {
+      "question": "How are String represented in memory in C?",
+      "option1": "An array of characters",
+      "option2": "The Object of some class",
+      "option3": "Same as other primitive data types",
+      "option4": "LinkedList of characters",
+      "answer": "An array of characters"
+    },
+    {
+      "question": "How is an array initialized in C language?",
+      "option1":  "int a[3]={1,2,3};",
+      "option2":  "int a={1,2,3};",
+      "option3":  "int a[] =new int[3];",
+      "option4": "int a(3)=[1,2,3];",
+      "answer": "int a[3]={1,2,3};"
+    },
+    {
+      "question": "What is the disadvantage of arrays in C?",
+      "option1":  "The amount of memory to be allocated should be known beforehand",
+      "option2": "Elements of array can be accessed in constant time",
+      "option3":"Elements are stored in contiguous memory blocks",
+      "option4":  "Multiple Other Data Structures can be implemented using array",
+      "answer": "The amount of memory to be allocated should be known beforehand"
+    },
+    {
+      "question": "What does the following declaration indicate?  int a: 8;",
+      "option1":  "a stores a value of 8",
+      "option2": "a is an 8 bit integer",
+      "option3": "Both 1 & 2",
+      "option4": "None of the above",
+      "answer": "a is an 8 bit integer"
+    },
+    {
+      "question": "Which of the following is the proper syntax for declaring macros in C?",
+      "option1": "#define long long l",
+      "option2":"#define l long long",
+      "option3": "#define l",
+      "option4":"#define long long",
+      "answer": "#define l long long"
+    },
+    {
+      "question": "Which of the following is an exit controlled loop?",
+      "option1":  "for loop",
+      "option2":  "while loop",
+      "option3":  "do-while loop",
+      "option4": "None of the above",
+      "answer":  "do-while loop"
+    },
+    {
+      "question": "What is the size of the int data type (in bytes) in C?",
+      "option1":  "4",
+      "option2":  "8",
+      "option3":  "2",
+      "option4": "1",
+      "answer":  "4"
+    },
+    {
+      "question": "If p is an integer pointer with a value 1000, then what will the value of p + 5 be?",
+      "option1":  "1020",
+      "option2":  "1005",
+      "option3":  "1004",
+      "option4": "1010",
+      "answer":  "1020"
+    },
+    {
+      "question": "In which of the following languages is function overloading not possible?",
+      "option1":  "C",
+      "option2":  "C++",
+      "option3":  "Java",
+      "option4": "Python",
+      "answer":  "C"
+    },
+    {
+      "question": "How to find the length of an array in C?",
+      "option1":  "sizeof(a)",
+      "option2":  "sizeof(a[0])",
+      "option3":  "sizeof(a)/sizeof(a[0])",
+      "option4": "sizeof(a)*sizeof(a[0])",
+      "answer":  "sizeof(a)/sizeof(a[0])"
+    }
+]
+}

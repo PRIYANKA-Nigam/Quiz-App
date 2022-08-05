@@ -1,0 +1,84 @@
+{
+  "response": [
+    {
+      "question": "What is spring?",
+      "option1": "Proprietary framework",
+      "option2": "Open source development framework for enterprise Java",
+      "option3": "Spring is a development framework for .Net applications",
+      "option4": "Spring is a development framework for PHP based applications",
+      "answer": "Open source development framework for enterprise Java"
+    },
+    {
+      "question": "Which are the IoC containers in Spring?",
+      "option1": "BeanFactory, BeanContext, IocContextFactory",
+      "option2": "BeanFactory, ApplicationContext",
+      "option3": "BeanFactory, ApplicationContext, BeanContext",
+      "option4": "BeanFactory, ApplicationContext, IocContextFactory",
+      "answer": "BeanFactory, ApplicationContext"
+    },
+    {
+      "question": "Which are the different modes of autowiring?",
+      "option1": "byName, byContent, setter, autodetect",
+      "option2": "byName, byContent, constructor, autodetect",
+      "option3": "no, byName, byType, constructor, autodetect",
+      "option4": "no, byName, byType, constructor, autocorrect",
+      "answer": "no, byName, byType, constructor, autodetect"
+    },
+    {
+      "question": "Which of the following is part of Data Access layer in Spring framework?",
+      "option1":  "JMS",
+      "option2":  "Beans",
+      "option3":  "Aspects",
+      "option4": "Context",
+      "answer": "JMS"
+    },
+    {
+      "question": "Which class acts as IoC Container?",
+      "option1":  "ApplicationContext",
+      "option2": "ServletContext",
+      "option3":"DispatcherServlet",
+      "option4":  "None of the Above",
+      "answer": "1,233 K"
+    },
+    {
+      "question": "If a bean is scoped to HTTP session, scope is",
+      "option1":  "Request",
+      "option2": "Prototype",
+      "option3": "Session",
+      "option4": "Global-session",
+      "answer": "Session"
+    },
+    {
+      "question": "Spring provides to simplify your DAO implementation by managing entitymanagers and transactions for you",
+      "option1": "JpaTemplate",
+      "option2":"SpringTemplate",
+      "option3": "HibernateTemplate",
+      "option4":"None of the Above",
+      "answer": "JpaTemplate"
+    },
+    {
+      "question": "A remote stateless session bean requires annotations",
+      "option1":  "@Stateless",
+      "option2":  "@Remote",
+      "option3":  "Both A & B",
+      "option4": "None of the Above",
+      "answer":  "Both A & B"
+    },
+    {
+      "question": "Spring Dependency Injection is useful because it makes your code",
+      "option1": "Simple",
+      "option2":"Easier to test",
+      "option3": "Easier to understand",
+      "option4":"All are Correct",
+      "answer": "Easier to understand"
+    },
+    {
+      "question": "Which spring module provides the capability of DI or IOC?",
+      "option1":  "AOP",
+      "option2":  "Spring web",
+      "option3":  "Core container",
+      "option4": "Data access",
+      "answer":  "Core container"
+    }
+  ]
+}

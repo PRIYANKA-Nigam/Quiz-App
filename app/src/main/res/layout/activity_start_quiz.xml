@@ -209,7 +209,7 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginBottom="15sp"
-            android:text="START QUIZ"
+            android:text="SELECT QUIZ"
             android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>

@@ -1,0 +1,147 @@
+{
+  "response": [
+    {
+      "question": " In order to transfer data between a database and an application written in the Java programming language, the JDBC API provides which of these methods?",
+      "option1": "Methods on the ResultSet class for retrieving SQL SELECT results as Java types.",
+      "option2": "Methods on the PreparedStatement class for sending Java types as SQL statement parameters.",
+      "option3": "Methods on the CallableStatement class for retrieving SQL OUT parameters as Java types.",
+      "option4": "All mentioned above",
+      "answer": "All mentioned above"
+    },
+    {
+      "question": "How many Result sets available with the JDBC 2.0 core API?",
+      "option1": "2",
+      "option2": "3",
+      "option3": "4",
+      "option4": "5",
+      "answer": "3"
+    },
+    {
+      "question": "Which method Drops all changes made since the previous commit/rollback?",
+      "option1": "public void rollback()",
+      "option2": "public void commit()",
+      "option3": "public void close()",
+      "option4": "public Statement createStatement()",
+      "answer": "public void rollback()"
+    },
+    {
+      "question": "Which method is used to establish the connection with the specified url in a Driver Manager class?",
+      "option1":  "public static void registerDriver(Driver driver)",
+      "option2":  "public static void deregisterDriver(Driver driver)",
+      "option3":  "public static Connection getConnection(String url)",
+      "option4": "public static Connection getConnection(String url,String userName,String password)",
+      "answer": "public static Connection getConnection(String url)"
+    },
+    {
+      "question": "Which driver Network connection is indirect that a JDBC client makes to a middleware process that acts as a bridge to the DBMS server?",
+      "option1":  "JDBC-Net",
+      "option2": "JDBC-ODBC bridge",
+      "option3":"Native API as basis",
+      "option4":  "Native protocol as basis",
+      "answer": "JDBC-Net"
+    },
+    {
+      "question": "Which kind of driver converts JDBC calls into calls on the client API for Oracle, Sybase, Informix, IBM DB2, or other DBMS?",
+      "option1":  "JDBC-ODBC bridge plus ODBC driver",
+      "option2": "Native-API partly-Java driver",
+      "option3": "JDBC-Net pure Java driver",
+      "option4": "Native-protocol pure Java driver",
+      "answer": "Native-API partly-Java driver"
+    },
+    {
+      "question": "Which is used to call the stored procedures and functions?",
+      "option1": "CallableStatement Interface",
+      "option2":"PreparedStatement Interface",
+      "option3": "None of the above",
+      "option4":"All of the above",
+      "answer": "CallableStatement Interface"
+    },
+    {
+      "question": "Which method is used for an SQL statement that is executed frequently?",
+      "option1":  "prepareStatement",
+      "option2":  "prepareCall",
+      "option3":  "createStatement",
+      "option4": "None of the above",
+      "answer":  "prepareStatement"
+    },
+    {
+      "question": "What is used to execute parameterized query?",
+      "option1": "Statement interface",
+      "option2":"PreparedStatement interface",
+      "option3": "ResultSet interface",
+      "option4":"None of the above",
+      "answer": "PreparedStatement interface"
+    },
+    {
+      "question": "Which was the first most widely used programming interface for accessing relational databases and it offers the ability to connect all the databases on all the platforms.?",
+      "option1":  "JDBC API",
+      "option2":  "ODBC API",
+      "option3":  "Both A & B",
+      "option4": "None of the above",
+      "answer":  "ODBC API"
+    },
+    {
+      "question": "Which class has traditionally been the backbone of the JDBC architecture?",
+      "option1":  "the JDBC driver manager",
+      "option2":  " the JDBC driver test suite",
+      "option3":  "the JDBC-ODBC bridge",
+      "option4": "All of the above",
+      "answer":  "the JDBC driver manager"
+    },
+    {
+      "question": "How many steps are used to connect any java application using JDBC?",
+      "option1":  "5",
+      "option2":  "4",
+      "option3":  "3",
+      "option4": "6",
+      "answer":  "5"
+    },
+    {
+      "question": "What is the reason that a java program cannot directly communicate with an ODBC driver?",
+      "option1":  " ODBC written in C# language",
+      "option2":  " ODBC written in C language",
+      "option3":  " ODBC written in C++ language",
+      "option4": "None of the above",
+      "answer":  " ODBC written in C language"
+    },
+    {
+      "question": "Which result set generally does not show changes to the underlying database that are made while it is open. The membership, order, and column values of rows are typically fixed when the result set is created?",
+     "option1":  "TYPE_FORWARD_ONLY",
+      "option2":  "TYPE_SCROLL_INSENSITIVE",
+      "option3":  "TYPE_SCROLL_SENSITIVE",
+      "option4": "all of the above",
+      "answer":  "TYPE_SCROLL_INSENSITIVE"
+    },
+    {
+      "question": "What are the major components of the JDBC?",
+     "option1":  "DriverManager, Driver, Connection, Statement, and ResultSet",
+      "option2":  "DriverManager, Driver, Connection, and Statement",
+      "option3":  "DriverManager, Statement, and ResultSet",
+      "option4": "DriverManager, Connection, Statement, and ResultSet",
+      "answer":  "DriverManager, Driver, Connection, Statement, and ResultSet"
+    },
+    {
+      "question": "What is the correct sequence to create a database connection?
+         i. Import JDBC packages.
+         ii. Open a connection to the database.
+         iii. Load and register the JDBC driver.
+         iv. Execute the statement object and return a query resultset.
+         v. Create a statement object to perform a query.
+         vi. Close the resultset and statement objects.
+         vii. Process the resultset.",
+     "option1":  "i, ii, iii, v, iv, vii, viii, vi",
+      "option2":  "i, iii, ii, v, iv, vii, vi, viii",
+      "option3":  "ii, i, iii, iv, viii, vii, v, vi",
+      "option4": "i, iii, ii, iv, v, vi, vii, viii",
+      "answer":  "i, iii, ii, v, iv, vii, vi, viii"
+    },
+    {
+      "question": "Which of the following method is static and synchronized in JDBC API?",
+     "option1":  "getConnection()",
+      "option2":  "prepareCall()",
+      "option3":  "executeUpdate()",
+      "option4": "executeQuery()",
+      "answer":  "getConnection()"
+    }
+  ]
+}

@@ -23,9 +23,10 @@ public class TimesUpActivity extends AppCompatActivity {
         int w =intent.getIntExtra("wrong",0);
         int s =intent.getIntExtra("skip",0);
         int l=intent.getIntExtra("len",0);
+        String f=intent.getStringExtra("flag");
         SharedPreferences sharedPreferences=getSharedPreferences("times", Context.MODE_PRIVATE);
         sharedPreferences.edit().putString("ct", String.valueOf(c)).putString("wt", String.valueOf(w)).putString("st", String.valueOf(s))
-                .putString("len", String.valueOf(l)).apply();
+                .putString("len", String.valueOf(l)).putString("flag",f).apply();
     }
 
     public void timesUp(View view) {

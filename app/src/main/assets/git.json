@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "Which Command is used to show limited number of commits?",
+      "option1": "git status",
+      "option2": "git config",
+      "option3": "git log -n",
+      "option4": "git fetch",
+      "answer": "git log -n"
+    },
+    {
+      "question": "Command to download all the objects and references from a specified repository",
+      "option1": "git log -n",
+      "option2": "git config --list",
+      "option3": "git help",
+      "option4": "git fetch",
+      "answer": "git fetch"
+    },
+    {
+      "question": "Git is a",
+      "option1": "Localized version control system",
+      "option2": "Distributed version control system",
+      "option3": "Centralized version control system",
+      "option4": "None of the above",
+      "answer": "Distributed version control system"
+    },
+    {
+      "question": "Which of the following is true about Centralized version control system?",
+      "option1":  " It is victim to single point of failure",
+      "option2":  "It does not rely on the central server",
+      "option3":  "It rely on the central server",
+      "option4": "Both A and C",
+      "answer": "Both A and C"
+    },
+    {
+      "question": "The files that can be committed are always present in git",
+      "option1":  "staging area",
+      "option2": "unstaged area",
+      "option3":"working directory",
+      "option4":  "none of the above",
+      "answer": "staging area"
+    },
+    {
+      "question": "Which of the following option is not valid with git stash command?",
+      "option1":  "git stash list pop",
+      "option2": " git stash list clear",
+      "option3": " git stash list push",
+      "option4": " git stash changes",
+      "answer": " git stash list push"
+    },
+    {
+      "question": "Which of the following statement is true about git ignore file?",
+      "option1": "We can create multiple ignore files in a different directory.",
+      "option2":"The .gitignore file contains all the formats and files that should be ignored while commit",
+      "option3": "None of the above",
+      "option4":"Both of the above",
+      "answer": " Both of the above."
+    },
+    {
+      "question": "Which command helps us to see the tracked, untracked files and changes but does not show any commit records?",
+      "option1":  "git diff",
+      "option2":  "git status",
+      "option3":  "git log",
+      "option4": "None of the above",
+      "answer":  "git status"
+    },
+    {
+      "question": "Git log command contains following data",
+      "option1": "commit date metadata",
+      "option2":" commit hash",
+      "option3": "commit author metadata",
+      "option4":"All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "git log --oneline command will display",
+      "option1":  "the first seven characters of the SHA",
+      "option2":  "one commit per line",
+      "option3":  "the commit message",
+      "option4": "All of the above",
+      "answer":  "All of the above"
+    },
+    {
+      "question": "Tags in git can be",
+      "option1":  "heavy-weighted tag",
+      "option2":  "light-weighted tag",
+      "option3":  "annotated tag",
+      "option4": "Only B & C",
+      "answer":  "Only B & C"
+    },
+    {
+      "question": "What does the below git command indicates? git add *.java",
+      "option1":  "The above command will exclude all the Java files while staging",
+      "option2":  "It will give error - invalid command",
+      "option3":  "The above command will commit all the Java files",
+      "option4": "The above command will stage all the Java source files",
+      "answer":  "The above command will stage all the Java source files"
+    },
+    {
+      "question": " ........ is a version of the repository that diverges from the main working project",
+      "option1":  "master",
+      "option2":  " fork",
+      "option3":  "branch",
+      "option4": "clone",
+      "answer":  "branch"
+    },
+    {
+      "question": ".......... is equivalent to fetch and merge",
+     "option1":  "pull",
+      "option2":  "syncronize",
+      "option3":  "push",
+      "option4": "fetch",
+      "answer":  "pull"
+    },
+    {
+      "question": "Which two configuration properties does the tool expect to be configured after installing Git and prior to issuing the first commit?",
+     "option1":  "email address and password",
+      "option2":  "username and password",
+      "option3":  "username and IP address",
+      "option4": "username and email address",
+      "answer":  "username and email address"
+    },
+    {
+      "question": "Git reset --hard used to?",
+     "option1":  "uncommitted the changes, unstage the changes",
+      "option2":  "uncommitted the changes",
+      "option3":  "uncommitted the changes, unstage the changes, delete the changes",
+      "option4": "Unstage the changes",
+      "answer":  "uncommitted the changes, unstage the changes, delete the changes"
+    },
+    {
+      "question": "What will the following command print to the Terminal?git remote -v",
+     "option1":  "A list of remote repositories you are connected to",
+      "option2":  "The current git version you're running",
+      "option3":  "An inline editor for modifying remote repositories",
+      "option4": "The last 5 git versions you've installed",
+      "answer":  "A list of remote repositories you are connected to"
+    }
+  ]
+}

@@ -25,7 +25,7 @@ Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(),QuizSelectActivity.class));
             }
         });
     }
@@ -56,11 +56,11 @@ Button button;
     }
     public static void closeDrawer(DrawerLayout drawerLayout) { if (drawerLayout.isDrawerOpen(GravityCompat.START)){
         drawerLayout.closeDrawer(GravityCompat.START); } }
-    public void ClickHome(View view){ MainActivity.redirectActivity(this,MainActivity.class); }
+    public void ClickHome(View view){ QuizSelectActivity.redirectActivity(this,QuizSelectActivity.class); }
     public void ClickInstructions(View view){recreate();}
-    public void ClickHistory(View view){MainActivity.redirectActivity(this,HistoryActivity.class);}
-    public void ClickDark(View view){MainActivity.redirectActivity(this,DarkModeActivity.class);}
+    public void ClickHistory(View view){QuizSelectActivity.redirectActivity(this,HistoryActivity.class);}
+    public void ClickDark(View view){QuizSelectActivity.redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
-        MainActivity.logout(this);
+        QuizSelectActivity.logout(this);
     }
 }

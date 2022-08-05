@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "What is an activity in android?",
+      "option1": "android class",
+      "option2": "android package",
+      "option3": "a single screen in an application with supported java code",
+      "option4": "none of the above",
+      "answer": "a single screen in an application with supported java code"
+    },
+    {
+      "question": "Among the below virtual machines choose the one which is used by the Android operating system",
+      "option1": "Dalvik Virtual Machine",
+      "option2": "JVM",
+      "option3": "Simple Virtual Machine",
+      "option4": "None of the above",
+      "answer": "Dalvik Virtual Machine"
+    },
+    {
+      "question": "All layout classes are the subclasses of",
+      "option1": "android.Widget",
+      "option2": "android.view.View",
+      "option3": "android.view.ViewGroup",
+      "option4": "None",
+      "answer": "android.view.ViewGroup"
+    },
+    {
+      "question": " The full form of APK is",
+      "option1":  "Android Page kit",
+      "option2":  "Android Phone kit",
+      "option3":  "Android Package kit",
+      "option4": "Android Photo kit",
+      "answer": "Android Package kit"
+    },
+    {
+      "question": "What is manifest XML in android?",
+      "option1":  "It has information about the layout in an appliacation",
+      "option2": "It has all the information about the appliacation",
+      "option3":"It has information about the activities in an appliacation",
+      "option4":  "None of the Above",
+      "answer": "It has all the information about the appliacation"
+    },
+    {
+      "question": "What is the use of a content provider in Android?",
+      "option1":  "For sharing the data between applications",
+      "option2": "For storing the data in the database",
+      "option3": "For sending data from an application to another application",
+      "option4": "None of the options",
+      "answer": "For sending data from an application to another application"
+    },
+    {
+      "question": "While developing android application developers can test their apps on",
+      "option1": "Emulators in android SDK",
+      "option2":"Android phone",
+      "option3": "Third party Emulator",
+      "option4":"All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "In android, mini activities are also known as",
+      "option1":  "Adapter",
+      "option2":  "Activity",
+      "option3":  "Fragments",
+      "option4": "None of the Above",
+      "answer":  "Fragments"
+    },
+    {
+      "question": "Among the following choose the one which converts Java bytecode into Dalvik bytecode",
+      "option1": "dex compiler",
+      "option2":"Mobile Interpretive compare",
+      "option3": "Delvik convertor",
+      "option4":"None of the above",
+      "answer": "dex compiler"
+    },
+    {
+      "question": "The services in android can be stopped using which of the following method?",
+      "option1":  "System.exit() method",
+      "option2":  "stopSelf() and stopService() method",
+      "option3":  "finish() method",
+      "option4": "end() method",
+      "answer":  "stopSelf() and stopService() method"
+    },
+    {
+      "question": "Activity in Android can be killed using?",
+      "option1":  "finishActivity(int requestCode)",
+      "option2":  "finish() method",
+      "option3":  "Both 1 & 2",
+      "option4": "none of the above",
+      "answer":  "Both 1 & 2"
+    },
+    {
+      "question": "Identify the parent class of activity",
+      "option1":  "contextThemeWrapper",
+      "option2":  "context",
+      "option3":  "object",
+      "option4": "none",
+      "answer":  "contextThemeWrapper"
+    },
+    {
+      "question": "Identify the topmost layer of Android architecture",
+      "option1":  "Applications",
+      "option2":  "Application Framework",
+      "option3":  "Linux Kernel",
+      "option4": "System Libraries and Android Runtime",
+      "answer":  "Application Framework"
+    },
+    {
+      "question": "Identify the lowest layer of Android architecture.",
+     "option1":  "Applications",
+      "option2":  "Application Framework",
+      "option3":  "Linux Kernel",
+      "option4": "System Libraries and Android Runtime",
+      "answer":  "Linux Kernel"
+    },
+    {
+      "question": "Identify among the following which is not a state in the service lifecycle.",
+     "option1":  "Running",
+      "option2":  "Start",
+      "option3":  "Paused",
+      "option4": "Destroyed",
+      "answer":  "Paused"
+    },
+    {
+      "question": "On what is Android web browser-based?",
+     "option1":  "Safari",
+      "option2":  "Firefox",
+      "option3":  "Open source WebKit",
+      "option4": "Chrome",
+      "answer":  "Open source WebKit"
+    },
+    {
+      "question": "Why is the view pager used?",
+     "option1":  "Paging down list items",
+      "option2":  "Swiping fragments",
+      "option3":  "Swiping Activities",
+      "option4": "None of the above",
+      "answer":  "Swiping fragments"
+    }
+  ]
+}

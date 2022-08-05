@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw"
+    android:background="@drawable/customborder2"
+    tools:context=".QuizSelectActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+    <include layout="@layout/main_toolbar" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quizlets"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="60dp"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
+            />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/c_pro" />
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="C Programming"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/c_plus_plus_pro" />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="C++ Programming"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/java_pro" />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="Java Programming"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/spring_pro" />
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="Spring Framework"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/jdbc_pro" />
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="JDBC"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/git" />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="Git Tool"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/andr" />
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="Android Development"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <include layout="@layout/main_nav_drawer"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -19,13 +19,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
 public class ResultActivity extends AppCompatActivity {
 TextView textView; ArrayList<String> list=new ArrayList<>();
 ImageView imageView;int flag=0; String news="",col="";
-    Button b1,b2,b3; static  int percentage=0;
+    Button b1,b2,b3; static  int percentage=0; String fl="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,7 @@ ImageView imageView;int flag=0; String news="",col="";
         String wt=sharedPreferences.getString("wt",null);
         String st=sharedPreferences.getString("st",null);
         String length=sharedPreferences.getString("len",null);
+         fl=sharedPreferences.getString("flag",null);
        int  c=Integer.parseInt(ct);int w=Integer.parseInt(wt);int s=Integer.parseInt(st); int len=Integer.parseInt(length);
         b1.setText("Correct :"+c);
         b2.setText("Wrong :"+w); b3.setText("Skipped :"+s);
@@ -72,14 +74,31 @@ ImageView imageView;int flag=0; String news="",col="";
         String s3=  sh.getString("skip",null);
         String perc=sh.getString("perc",null);
         String flag=sh.getString("pos",null);
+        String type="";
+        if (fl.equals("c"))
+            type="C Programming";
+        if (fl.equals("cp"))
+            type="C++ Programming";
+        if (fl.equals("j"))
+            type="Java Programming";
+        if (fl.equals("jd"))
+            type="JDBC";
+        if (fl.equals("s"))
+            type="Spring Framework";
+        if (fl.equals("g"))
+            type="Git SCM Tool";
+        if (fl.equals("a"))
+            type="Android Development";
         Calendar calendar =Calendar.getInstance();
+//        SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+//        String curDate=format.format(calendar.getTime());
         String curDate= DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
         if (flag.equals("0"))
         news="Correct: "+s1+"\n"+"-------------------- \n"+"Incorrect: "+s2+"\n"+"--------------------- \n"+"Skipped: "+s3+"\n"+"------------------------ \n"+"Percentage: "
-                +perc+"%"+"\n"+"---------------------\n"+"Status: Pass             ("+curDate+")";
+                +perc+"%"+"\n"+"---------------------\n"+"Status: Pass\n"+"-------------------------\n"+"Subject: "+type+"             \n\n("+curDate+")";
         else
             news="Correct: "+s1+"\n"+"---------- \n"+"Incorrect: "+s2+"\n"+"----------- \n"+"Skipped: "+s3+"\n"+"------------- \n"+"Percentage: "
-                    +perc+"%"+"\n"+"--------------------\n"+"Status: Fail                ("+curDate+")";
+                    +perc+"%"+"\n"+"--------------------\n"+"Status: Fail\n"+"-------------------------\n"+"Subject: "+type+"                \n\n("+curDate+")";
         list.add(news);
         Intent intent=new Intent(getApplicationContext(),HistoryActivity.class);
         intent.putStringArrayListExtra("quote", list);

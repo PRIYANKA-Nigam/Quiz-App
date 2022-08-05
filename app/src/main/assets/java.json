@@ -1,0 +1,72 @@
+{
+  "response": [
+    {
+      "question": "Number of primitive data types in Java are?",
+      "option1": "6",
+      "option2": "7",
+      "option3": "8",
+      "option4": "9",
+      "answer": "8"
+    },
+    {
+      "question": "What is the size of float and double in java?",
+      "option1": "32 and 64",
+      "option2": "32 and 32",
+      "option3": "64 and 64",
+      "option4": "64 and 32",
+      "answer": "32 and 64"
+    },
+    {
+      "question": "Automatic type conversion is possible in which of the possible cases?",
+      "option1": "byte to int",
+      "option2": "int to long",
+      "option3": "long to int",
+      "option4": "short to int",
+      "answer": "int to long"
+    },
+    {
+      "question": "Find the output of the following code.
+         int Integer = 24;
+         char String  = ‘I’;
+         System.out.print(Integer);
+         System.out.print(String);",
+      "option1":  "Compile Error",
+      "option2":  "Throws Exception",
+      "option3":  "I",
+      "option4": "24I",
+      "answer": "24I"
+    },
+    {
+      "question": "Select the valid statement.",
+      "option1":  "char[] ch=new char(5)",
+      "option2": "char[] ch=new char[5]",
+      "option3":"char[] ch=new char()",
+      "option4":  "char[]ch=new char[]",
+      "answer": "char[] ch=new char[5]"
+    },
+    {
+      "question": "When an array is passed to a method, what does the method receive?",
+      "option1":  "A reference of the array",
+      "option2": "A copy of the array",
+      "option3": "Length of the array",
+      "option4": "Copy of first element",
+      "answer": "A reference of the array"
+    },
+    {
+      "question": "Select the valid statement to declare and initialize an array",
+      "option1": "int[] a={}",
+      "option2":"int[] a={1,2,3}",
+      "option3": "int[] a=(1,2,3)",
+      "option4":"int[][] a={1,2,3}",
+      "answer": "int[] a={1,2,3}"
+    },
+    {
+      "question": "When is the object created with new keyword?",
+      "option1":  "At runtime",
+      "option2":  "At compile time",
+      "option3":  "Depends on the code",
+      "option4": "none",
+      "answer":  "At runtime"
+    }
+  ]
+}

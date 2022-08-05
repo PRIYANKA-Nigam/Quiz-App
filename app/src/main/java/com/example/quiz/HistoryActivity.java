@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 
 public class HistoryActivity extends AppCompatActivity {
     DrawerLayout drawerLayout; String s1,s2,s3,s4,s5;
-   static ListView listView; String c_val="";
+   static ListView listView;
     ArrayAdapter arrayAdapter;
     ArrayList<String> arrayList=new ArrayList<>();
     ArrayList<String> userSelection=new ArrayList<>();
@@ -185,7 +185,7 @@ private void loadData() {
                     SharedPreferences sh = getApplicationContext().getSharedPreferences("religious", Context.MODE_PRIVATE);
                     HashSet<String> set = new HashSet<>(arrayList);
                     sh.edit().putStringSet("event", set).apply();
-                    Toast.makeText(getApplicationContext(), "Deleted this Quote ...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Deleted result History ...", Toast.LENGTH_SHORT).show();
                     actionMode.finish();
                     return true;
                 case R.id.share:
@@ -210,11 +210,11 @@ private void loadData() {
     }
     public static void closeDrawer(DrawerLayout drawerLayout) { if (drawerLayout.isDrawerOpen(GravityCompat.START)){
         drawerLayout.closeDrawer(GravityCompat.START); } }
-    public void ClickHome(View view){ MainActivity.redirectActivity(this,MainActivity.class); }
-    public void ClickInstructions(View view){MainActivity.redirectActivity(this,StartQuizActivity.class);}
+    public void ClickHome(View view){ QuizSelectActivity.redirectActivity(this,QuizSelectActivity.class); }
+    public void ClickInstructions(View view){QuizSelectActivity.redirectActivity(this,StartQuizActivity.class);}
     public void ClickHistory(View view){recreate();}
-    public void ClickDark(View view){MainActivity.redirectActivity(this,DarkModeActivity.class);}
+    public void ClickDark(View view){QuizSelectActivity.redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
-        MainActivity.logout(this);
+        QuizSelectActivity.logout(this);
     }
 }
