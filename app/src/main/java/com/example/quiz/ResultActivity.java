@@ -89,6 +89,14 @@ ImageView imageView;int flag=0; String news="",col="";
             type="Git SCM Tool";
         if (fl.equals("a"))
             type="Android Development";
+        if (fl.equals("m"))
+            type="Microservice";
+        if (fl.equals("co"))
+            type="Container/Virtual Machine";
+        if (fl.equals("je"))
+            type="Jenkins";
+        if (fl.equals("d"))
+            type="Docker";
         Calendar calendar =Calendar.getInstance();
 //        SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 //        String curDate=format.format(calendar.getTime());

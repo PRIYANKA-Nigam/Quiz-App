@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "Jenkins was developed for",
+      "option1": "Continuous Integration",
+      "option2": "Continuous Monitoring",
+      "option3": "Continuous Delivery",
+      "option4": "Continuous Deployment",
+      "answer": "Continuous Integration"
+    },
+    {
+      "question": "Jenkins can be integrated with",
+      "option1": "Git",
+      "option2": "Maven",
+      "option3": "All of these",
+      "option4": "Perforce",
+      "answer": "All of these"
+    },
+    {
+      "question": "Which of the below command is used to install jenkins?",
+      "option1": "java-jar jenkins.war" ,
+      "option2": "java-jar jenkins.jar",
+      "option3": "java-war jenkins.war",
+      "option4": "java-war jenkins.jar",
+      "answer": "java-jar jenkins.war"
+    },
+    {
+      "question": "Which scripting language is used in Jenkins?",
+      "option1":  "Groovy",
+      "option2":  "Bash",
+      "option3":  "Perl",
+      "option4": "Python",
+      "answer": "Groovy"
+    },
+    {
+      "question": "Jenkins can only written in",
+      "option1":  "C++",
+      "option2": ".Net",
+      "option3":"Java",
+      "option4":  "none",
+      "answer": "Java"
+    },
+    {
+      "question": "What are the two components jenkins is mainly integrated with",
+      "option1":  "Version Control System like Git,SVN",
+      "option2":  "Build Tools like Apache Maven",
+      "option3":  "both of the above",
+      "option4": "none of the above",
+      "answer": "both of the above"
+    },
+    {
+      "question": "How can u setup jenkins jobs",
+      "option1": "Select new item from the menu",
+      "option2":"After that enter the name of the job and select free style job",
+      "option3": "Than click OK to create a new job in jenins",
+      "option4":"All",
+      "answer": "All"
+    },
+    {
+      "question": "Jenkins is a",
+      "option1":  "Open Source Automation Server",
+      "option2":  "Open Source Code",
+      "option3":  "both of the above",
+      "option4": "none of the above",
+      "answer": "Open Source Automation Server"
+    },
+    {
+      "question": "what are the possible actions you will perform to fix a broken build in Jenkins",
+      "option1": "check console output for missing file changes",
+      "option2":"Clean and Update Local Workspace",
+      "option3": "Check job configuration",
+      "option4":"All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "which one of the following is functionality of continuous integration?",
+      "option1":  "repository management",
+      "option2":  "code versioning",
+      "option3":  "code quality metrics",
+      "option4": "configuration management",
+      "answer":  "code versioning"
+    },
+    {
+      "question": "What Jenkins cannot do?",
+      "option1":  "Generate test reports",
+      "option2":  "Integrate with many different Version Control Systems",
+      "option3":  "Push to various artifact repositories",
+      "option4": "Enviromental provisioning",
+      "answer":  "Enviromental provisioning"
+    },
+    {
+      "question": "Which of the scripts are used by jenkins to execute builds?",
+      "option1":  "Python",
+      "option2": "Ruby",
+      "option3":"Groovy",
+      "option4":  "All",
+      "answer": "All"
+    },
+    {
+      "question": "What is Jenkins ?",
+      "option1":  "Continuous integration tool",
+      "option2":  "Continuous delivery tool",
+      "option3":  "Both of the above",
+      "option4": "None of the above",
+      "answer":  "Both of the above"
+    },
+    {
+      "question": "Which of the following is not support by CI ?",
+     "option1":  "Automated build process",
+      "option2":  "Automated deployment to production",
+      "option3":  "Automated unit test",
+      "option4": "Automated code quality checks",
+      "answer":  "Automated deployment to production"
+    },
+    {
+      "question": "Which of below is not a dependency management tool?",
+     "option1":  "Ant",
+      "option2":  "Maven",
+      "option3":  "Gradle",
+      "option4": "Jenkins",
+      "answer":  "Jenkins"
+    },
+    {
+      "question": "Can we run Junits as a part of Jenkins job?",
+     "option1":  "True",
+      "option2":  "False",
+      "option3":  "May be",
+      "option4": "none of the above",
+      "answer":  "True"
+    },
+    {
+      "question": "Which plugin allows jenkins to create pipelines?",
+     "option1":  "JenkinsFile",
+      "option2":  "Job DSL",
+      "option3":  "All of these",
+      "option4": "Pipeline",
+      "answer":  "Pipeline"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "______  uses a hypervisor",
+      "option1": "Virtualization",
+      "option2": "Containerization",
+      "option3": "Both",
+      "option4": "Neither",
+      "answer": "Virtualization"
+    },
+    {
+      "question": "In ___________ environments, each application runs on its own kernel",
+      "option1": "Container",
+      "option2": "Virtual",
+      "option3": "Both, container and virtual",
+      "option4": "Neither container or virtual",
+      "answer": "All of these"
+    },
+    {
+      "question": " __________ uses images",
+      "option1": "Virtualization",
+      "option2": "Containerization",
+      "option3": "Both",
+      "option4": "Neither",
+      "answer": "Both"
+    },
+    {
+      "question": "Fewer physical servers are required, thanks to _________.",
+      "option1": "Virtualization",
+      "option2": "Containerization",
+      "option3": "Both",
+      "option4": "Neither",
+      "answer": "Both"
+    },
+    {
+      "question": "This splits up server resources to allow more than one operating system to run on one machine:",
+      "option1":  "Public Cloud",
+      "option2": "Hypervisor",
+      "option3":"Computational fluid dynamics",
+      "option4":  "none",
+      "answer": "Hypervisor"
+    },
+    {
+      "question": "Virtual machines virtualize",
+      "option1":  "Hardware",
+      "option2":  "Software",
+      "option3":  "Kernels",
+      "option4": "Operating systems",
+      "answer": "Hardware"
+    },
+    {
+      "question": "Containers virtualize",
+      "option1":  "Hardware",
+      "option2":  "Software",
+      "option3":  "Kernels",
+      "option4": "Operating systems",
+      "answer": "Operating systems"
+    },
+    {
+      "question": "An example of a hypervisor is",
+      "option1":  "VMWare",
+      "option2":  "Virtual Boxes",
+      "option3":  "Kernels",
+      "option4": "none of the above",
+      "answer": "Kernels"
+    },
+    {
+      "question": " ___________ uses containers",
+      "option1": "Container Nerd",
+      "option2":"Docker",
+      "option3": "Pod",
+      "option4":"None of the above",
+      "answer": "Pod"
+    },
+    {
+      "question": "________ share the kernel of the host OS",
+      "option1":  "Virtual machines",
+      "option2":  "Containers",
+      "option3":  "Disk images",
+      "option4": "None of the Above",
+      "answer":  "None of the Above"
+    },
+    {
+      "question": "What is the average lifespan of a container?",
+      "option1":  "4 milliseconds",
+      "option2":  "5 minutes",
+      "option3":  "25 hours",
+      "option4": "6 days",
+      "answer":  "25 hours"
+    },
+    {
+      "question": "Which among the following is faster",
+      "option1":  "Container",
+      "option2": "Virtual Machine",
+      "option3":"-",
+      "option4":  "-",
+      "answer": "Container"
+    },
+    {
+      "question": "Which among the following is more Secure",
+      "option1":  "Container",
+      "option2": "Virtual Machine",
+      "option3":"-",
+      "option4":  "-",
+      "answer": "Virtual Machine"
+    },
+    {
+      "question": "Can you run a VM in a container?",
+     "option1":  "Yes",
+      "option2":  "No",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "Yes"
+    },
+    {
+      "question": "Which of below is not a dependency management tool?",
+     "option1":  "Ant",
+      "option2":  "Maven",
+      "option3":  "Gradle",
+      "option4": "Jenkins",
+      "answer":  "Jenkins"
+    },
+    {
+      "question": "Can we run Junits as a part of Jenkins job?",
+     "option1":  "True",
+      "option2":  "False",
+      "option3":  "May be",
+      "option4": "none of the above",
+      "answer":  "True"
+    },
+    {
+      "question": "Which plugin allows jenkins to create pipelines?",
+     "option1":  "JenkinsFile",
+      "option2":  "Job DSL",
+      "option3":  "All of these",
+      "option4": "Pipeline",
+      "answer":  "Pipeline"
+    }
+  ]
+}

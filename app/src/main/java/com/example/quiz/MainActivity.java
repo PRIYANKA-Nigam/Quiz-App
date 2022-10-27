@@ -50,19 +50,27 @@ Button b1,b2,b3,b4; static int correct =0; static int  c=0,w=0,s=0;
         flag=getIntent().getStringExtra("flag");
         switch (flag){
             case "c":
-                delay = 50000;file="c_file.json"; break;
+                delay = 150000;file="c_file.json"; break;
             case "cp":
-                delay = 40000;file="cplusplus.json";break;
+                delay = 150000;file="cplusplus.json";break;
             case "j":
-                delay = 40000;file="java.json";break;
+                delay = 150000;file="java.json";break;
             case "jd":
-                delay = 90000;file="jdbc.json";break;
+                delay = 180000;file="jdbc.json";break;
             case "s":
-                delay = 60000;file="spring.json";break;
+                delay = 180000;file="spring.json";break;
             case "g":
-                delay = 70000;file="git.json";break;
+                delay = 180000;file="git.json";break;
             case "a":
-                delay = 90000;file="android.json";break;
+                delay = 180000;file="android.json";break;
+            case "m":
+                delay = 180000;file="microservice.json";break;
+            case "co":
+                delay = 180000;file="container_VM.json";break;
+            case "je":
+                delay = 180000;file="jenkins.json";break;
+            case "d":
+                delay = 180000;file="docker.json";break;
         }
         textView=findViewById(R.id.tt);
         textView2=findViewById(R.id.textView4);

@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "Microservice could be considered as subset of __________",
+      "option1": "Java",
+      "option2": "SOA",
+      "option3": "HTTP",
+      "option4": "Cloud",
+      "answer": "SOA"
+    },
+    {
+      "question": "A monolithic application is _________",
+      "option1": "built as single unit",
+      "option2": "built to handle functionality and data of many application",
+      "option3": "both of the above",
+      "option4": "none of the above",
+      "answer": "built as single unit"
+    },
+    {
+      "question": "Single point failure examples is ___",
+      "option1": "Monolithic",
+      "option2": "Microservice",
+      "option3": "both of the above",
+      "option4": "None of the above",
+      "answer": "Monolithic"
+    },
+    {
+      "question": "Agile development and deployment is difficult in case of _________",
+      "option1":  "Monolithic",
+      "option2":  "Microservice",
+      "option3":  "both of the above",
+      "option4": "none of the above",
+      "answer": "Monolithic"
+    },
+    {
+      "question": "Software built as microservices can by definition be broken down into multiple component services. The statement is:",
+      "option1":  "true",
+      "option2": "false",
+      "option3":"no idea",
+      "option4":  "none",
+      "answer": "true"
+    },
+    {
+      "question": "Simple to develop test deploy scale represents __________",
+      "option1":  "Monolithic",
+      "option2":  "Microservice",
+      "option3":  "both of the above",
+      "option4": "none of the above",
+      "answer": "Monolithic"
+    },
+    {
+      "question": "In microservices the api gateway takes care of the security aspect by rendering",
+      "option1": "Access token",
+      "option2":"Key-value pair",
+      "option3": "Encrypted keys",
+      "option4":"Chassis keys",
+      "answer": "Access token"
+    },
+    {
+      "question": "Functional decomposition is an example of ____________",
+      "option1":  "Monolithic",
+      "option2":  "Microservice",
+      "option3":  "both of the above",
+      "option4": "none of the above",
+      "answer": "Microservice"
+    },
+    {
+      "question": "Which ensures to insulate the applications by acting as a barrier?",
+      "option1": "API gateway",
+      "option2":"Service Deployment",
+      "option3": "Security control",
+      "option4":"Microservices Chassis",
+      "answer": "API gateway"
+    },
+    {
+      "question": "Which among these helps in developing a microservice quickly __________",
+      "option1":  "Chassis",
+      "option2":  "API Gateway",
+      "option3":  "Service Registry",
+      "option4": "Service Deployment",
+      "answer":  "Chassis"
+    },
+    {
+      "question": "Spring boot is example of _________",
+      "option1":  "Service registry",
+      "option2":  "Chassis framework",
+      "option3":  "API Gateway",
+      "option4": "Service Deployment",
+      "answer":  "Chassis framework"
+    },
+    {
+      "question": "Microservices based architecture enforces a modular structure.The above statement is:",
+      "option1":  "true",
+      "option2": "false",
+      "option3":"no idea",
+      "option4":  "none",
+      "answer": "true"
+    },
+    {
+      "question": "Queries in microservices architecture are implemented through _________",
+      "option1":  "SQRS",
+      "option2":  "CQRS",
+      "option3":  "OQRS",
+      "option4": "LQRS",
+      "answer":  "CQRS"
+    },
+    {
+      "question": "CQRS stands for in microservices _________",
+     "option1":  "Command and Query Responsibility Segregation",
+      "option2":  "Common Query Responsibility Segregation",
+      "option3":  "Cleaner Query Responsibility Segregation",
+      "option4": "Cipher Query Responsibility Segregation",
+      "answer":  "Command and Query Responsibility Segregation"
+    },
+    {
+      "question": "Microservices based architecture prefers __________",
+     "option1":  "NoSql DBs",
+      "option2":  "RDBMS DBs",
+      "option3":  "MySql DBs",
+      "option4": "No Dependency on any particular DBs",
+      "answer":  "No Dependency on any particular DBs"
+    },
+    {
+      "question": "External clients communicate with microservices using ____________",
+     "option1":  "API Proxy",
+      "option2":  "API Gateway",
+      "option3":  "Service registry",
+      "option4": "Security control",
+      "answer":  "Service registry"
+    },
+    {
+      "question": "Which acts as a database of services __________",
+     "option1":  "API gateway",
+      "option2":  "Microservice chassis",
+      "option3":  "Service registry",
+      "option4": "Security control",
+      "answer":  "Service registry"
+    }
+  ]
+}

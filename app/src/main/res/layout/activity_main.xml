@@ -93,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:text="Answer1"
-                    android:textSize="25dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
                 <Button
@@ -101,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:text="Answer2"
-                    android:textSize="25dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
                 <Button
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:text="Answer3"
-                    android:textSize="25dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
 
                 <Button
@@ -117,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:text="Answer4"
-                    android:textSize="25dp"
+                    android:textSize="17dp"
                     android:textStyle="bold" />
             </LinearLayout>
 

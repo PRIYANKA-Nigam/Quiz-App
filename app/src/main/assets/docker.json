@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "Docker was developed in",
+      "option1": "2012",
+      "option2": "2013",
+      "option3": "2014",
+      "option4": "2015",
+      "answer": "2013"
+    },
+    {
+      "question": "Command used for stopping a running container",
+      "option1": "docker kill",
+      "option2": "docker rm",
+      "option3": "docker stop",
+      "option4": "docker start",
+      "answer": "docker kill"
+    },
+    {
+      "question": " A docker registry is a place to store and distribute docker",
+      "option1": "Images",
+      "option2": "Codes",
+      "option3": "Files",
+      "option4": "All of the above",
+      "answer": "Images"
+    },
+    {
+      "question": "Does Kubernetes use Docker",
+      "option1": "Yes",
+      "option2": "No",
+      "option3": "-",
+      "option4": "-",
+      "answer": "Yes"
+    },
+    {
+      "question": "Is docker image OS Dependent",
+     "option1": "Yes",
+      "option2": "No",
+      "option3": "-",
+      "option4": "-",
+      "answer": "Yes"
+    },
+    {
+      "question": "Which of the following is the native clustering for Docker",
+      "option1":  "Docker Hub",
+      "option2":  "Docker Swarm",
+      "option3":  "Docker Cloud",
+      "option4": "Docker Compose",
+      "answer": "Docker Swarm"
+    },
+    {
+      "question": "What is Docker Registry",
+      "option1":  "Storage",
+      "option2":  "Content Delivery System",
+      "option3":  "Both of the Above",
+      "option4": "None of the Above",
+      "answer": "Both of the Above"
+    },
+    {
+      "question": "You can't create multiple containers from the same image in Docker",
+      "option1":  "True",
+      "option2":  "False",
+      "option3":  "-",
+      "option4": "-",
+      "answer": "False"
+    },
+    {
+      "question": "Can we reomve a paused container from Docker",
+      "option1": "Yes",
+      "option2":"No",
+      "option3": "-",
+      "option4":"-",
+      "answer": "No"
+    },
+    {
+      "question": "___________ are instances of Docker images that can be run using the Docker run command.",
+       "option1": "Hub",
+      "option2": "Cloud",
+      "option3": "File",
+      "option4": "Container",
+      "answer": "Container"
+    },
+    {
+      "question": "Which command/s lists docker images?",
+      "option1":  "Both "docker images" and "docker images ls"",
+      "option2":  "docker images ls",
+      "option3":  "docker images",
+      "option4": "docker -i",
+      "answer":  "Both "docker images" and "docker images ls""
+    },
+    {
+      "question": "Components of docker architecture is/are",
+      "option1":  "docker-host",
+      "option2": "docker-registry",
+      "option3":"docker client",
+      "option4":  "All of these",
+      "answer": "All of these"
+    },
+    {
+      "question": "Which of these is shared by all the docker containers",
+      "option1":  "Libraries",
+      "option2": "Application",
+      "option3":"Kernel",
+      "option4":  "Operating System Software",
+      "answer": "Kernel"
+    },
+    {
+      "question": "Which commands shows numbe rof images and containers",
+     "option1":  "docker info",
+      "option2":  "docker kill",
+      "option3":  "docker prune",
+      "option4": "docker network",
+      "answer":  "docker info"
+    },
+    {
+      "question": "Which orchestration tool handles multiple docker containers across different host machines",
+     "option1":  "Both Docker Swarm and Kubernetes",
+      "option2":  "Docker Swarm",
+      "option3":  "Kubernetes",
+      "option4": "None of the above",
+      "answer":  "Both Docker Swarm and Kubernetes"
+    },
+    {
+      "question": "Which of the following is/are Container orchestration technology",
+     "option1":  "Mesos",
+     "option2":  "Docker Swarm",
+      "option3":  "Kubernetes",
+      "option4": "All of the above",
+      "answer":  "All of the above"
+    },
+    {
+      "question": "________is a tool for defining and running multi-container Docker applications",
+      "option1":  "Docker Hub",
+      "option2":  "Docker Swarm",
+      "option3":  "Docker Cloud",
+      "option4": "Docker Compose",
+      "answer": "Docker Compose"
+    }
+  ]
+}

@@ -19,8 +19,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class QuizSelectActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
-    CircleImageView c1,c2,c3,c4,c5,c6,c7;
-    TextView t1,t2,t3,t4,t5,t6,t7; String flag="";
+    CircleImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11;
+    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11; String flag="";
     public static void logout(final HistoryActivity historyActivity) {
         AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
         builder.setMessage("Are You Sure You Want to Logout ?");
@@ -67,6 +67,12 @@ public class QuizSelectActivity extends AppCompatActivity {
         c5=findViewById(R.id.c5);c5.setTooltipText("JDBC Quiz");
         c6=findViewById(R.id.c6);c6.setTooltipText("Git SCM Tool Quiz");
         c7=findViewById(R.id.c7);c7.setTooltipText("Android Programming Quiz");
+        c8=findViewById(R.id.c8);c8.setTooltipText("Microservices Quiz");
+        c9=findViewById(R.id.c9);c9.setTooltipText("Container and Virtual Machine Quiz");
+        c10=findViewById(R.id.c10);c10.setTooltipText("Jenkins Quiz");
+        c11=findViewById(R.id.c11);c11.setTooltipText("Docker Quiz");
+
+
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,6 +129,38 @@ public class QuizSelectActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        c8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","m");
+                startActivity(intent);
+            }
+        });
+        c9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","co");
+                startActivity(intent);
+            }
+        });
+        c10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","je");
+                startActivity(intent);
+            }
+        });
+        c11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","d");
+                startActivity(intent);
+            }
+        });
         t1=findViewById(R.id.t1);
         t2=findViewById(R.id.t2);
         t3=findViewById(R.id.t3);
@@ -130,6 +168,10 @@ public class QuizSelectActivity extends AppCompatActivity {
         t5=findViewById(R.id.t5);
         t6=findViewById(R.id.t6);
         t7=findViewById(R.id.t7);
+        t8=findViewById(R.id.t8);
+        t9=findViewById(R.id.t9);
+        t10=findViewById(R.id.t10);
+        t11=findViewById(R.id.t11);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -183,6 +225,38 @@ public class QuizSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                 intent.putExtra("flag","a");
+                startActivity(intent);
+            }
+        });
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","m");
+                startActivity(intent);
+            }
+        });
+        t9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","co");
+                startActivity(intent);
+            }
+        });
+        t10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","je");
+                startActivity(intent);
+            }
+        });
+        t11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","d");
                 startActivity(intent);
             }
         });
