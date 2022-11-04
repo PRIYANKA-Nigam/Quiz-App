@@ -97,6 +97,12 @@ ImageView imageView;int flag=0; String news="",col="";
             type="Jenkins";
         if (fl.equals("d"))
             type="Docker";
+        if (fl.equals("k"))
+            type="Kubernetes";
+        if (fl.equals("r"))
+            type="Rest API";
+        if (fl.equals("p"))
+            type="PHP";
         Calendar calendar =Calendar.getInstance();
 //        SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 //        String curDate=format.format(calendar.getTime());

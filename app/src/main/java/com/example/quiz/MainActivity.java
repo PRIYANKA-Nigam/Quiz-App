@@ -71,6 +71,12 @@ Button b1,b2,b3,b4; static int correct =0; static int  c=0,w=0,s=0;
                 delay = 180000;file="jenkins.json";break;
             case "d":
                 delay = 180000;file="docker.json";break;
+            case "k":
+                delay = 180000;file="Kubernetes.json";break;
+            case "r":
+                delay = 180000;file="rest_api.json";break;
+            case "p":
+                delay = 600000;file="phpDoc.json";break;
         }
         textView=findViewById(R.id.tt);
         textView2=findViewById(R.id.textView4);

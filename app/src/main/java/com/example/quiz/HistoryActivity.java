@@ -37,7 +37,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class HistoryActivity extends AppCompatActivity {
-    DrawerLayout drawerLayout; String s1,s2,s3,s4,s5;
+    DrawerLayout drawerLayout;
    static ListView listView;
     ArrayAdapter arrayAdapter;
     ArrayList<String> arrayList=new ArrayList<>();

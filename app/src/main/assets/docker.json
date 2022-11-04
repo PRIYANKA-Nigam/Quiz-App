@@ -82,11 +82,11 @@
     },
     {
       "question": "Which command/s lists docker images?",
-      "option1":  "Both "docker images" and "docker images ls"",
+      "option1":  "Both docker images and docker images ls",
       "option2":  "docker images ls",
       "option3":  "docker images",
       "option4": "docker -i",
-      "answer":  "Both "docker images" and "docker images ls""
+      "answer":  "Both docker images and docker images ls"
     },
     {
       "question": "Components of docker architecture is/are",
@@ -105,7 +105,7 @@
       "answer": "Kernel"
     },
     {
-      "question": "Which commands shows numbe rof images and containers",
+      "question": "Which commands shows number of images and containers",
      "option1":  "docker info",
       "option2":  "docker kill",
       "option3":  "docker prune",

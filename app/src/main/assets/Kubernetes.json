@@ -1,0 +1,140 @@
+{
+  "response": [
+    {
+      "question": "What is a pod in Kubernetes and what does it do?",
+      "option1": "A collection of physical IT components that supports a group of containers",
+      "option2": "A collection of logic circuitry that evaluates a computer's operational code",
+      "option3": "Where you find peas",
+      "option4": "One or more containers grouped together to share resources and run as a unit",
+      "answer": "One or more containers grouped together to share resources and run as a unit"
+    },
+    {
+      "question": "What is the function of a node?",
+      "option1": "To communicate with hosts on a network",
+      "option2": "To store data collected by the OS",
+      "option3": "To run pods according to master components",
+      "option4": "To channel incoming data from multiple input ports to a specific port",
+      "answer": "To run pods according to master components"
+    },
+    {
+      "question": "What is a kubelet?",
+      "option1": "A node agent that manages pods and their containers",
+      "option2": "Software that is used to run containers outside of pods",
+      "option3": "A smaller version of Kubernetes",
+      "option4": "A device that collects data in an organized manner for easy access",
+      "answer": "A node agent that manages pods and their containers"
+    },
+    {
+      "question": "___ responsible for health checks of the pods running on individual nodes",
+      "option1": "Kubectl",
+      "option2": "Kubelet",
+      "option3": "Kube scheduler",
+      "option4": "Kube Controller manager",
+      "answer": "Kubelet"
+    },
+    {
+      "question": "What is the purpose of a ReplicaSet?",
+     "option1": "To prevent clones from invading other clusters",
+      "option2": "To monitor and respond to environmental latency",
+      "option3": "To duplicate pods",
+      "option4": "To create and maintain volumes",
+      "answer": "To duplicate pods"
+    },
+    {
+      "question": "What is the mission of the control plane?",
+      "option1":  "To manage clusters of pods",
+      "option2":  "To regulate communication between Kubernetes and clusters",
+      "option3":  "To move workloads from one host to another",
+      "option4": "To control nodes",
+      "answer": "To regulate communication between Kubernetes and clusters"
+    },
+    {
+      "question": "Which description best fits a DaemonSet?",
+      "option1":  "A way to run a copy of a pod on all or some nodes",
+      "option2":  "A method to manage clusters of pods",
+      "option3":  "A channel through which to pass information between two or more nodes",
+      "option4": "A system to connect nodes and pods",
+      "answer": "A way to run a copy of a pod on all or some nodes"
+    },
+    {
+      "question": "What is a Kubernetes volume?",
+      "option1":  "The software within an OS that controls capacity allocation for nodes",
+      "option2":  "A directory for the data accessible to containers in a pod",
+      "option3":  "Layering software that puts apps into compartments for easier deployment",
+      "option4": "Code that enables two software programs to communicate",
+      "answer": "A directory for the data accessible to containers in a pod"
+    },
+    {
+      "question": "What is the basic operational unit of Kubernetes?",
+      "option1": "Task",
+      "option2":"Nodes",
+      "option3": "Pod",
+      "option4":"Container",
+      "answer": "Pod"
+    },
+    {
+      "question": "What can be considered as the primary data store of Kubernetes?",
+       "option1": "Pod",
+      "option2": "Node",
+      "option3": "etcd",
+      "option4": "None of these",
+      "answer": "etcd"
+    },
+    {
+      "question": "Which of the following runs on each node and ensures containers are running in a pod",
+      "option1":  "Pod",
+      "option2":  "etcd",
+      "option3":  "Kubelet",
+      "option4": "Sheduler",
+      "answer":  "Kubelet"
+    },
+    {
+      "question": "What is Kubernetes?",
+      "option1":  "Portable platform",
+      "option2": "Extensible platform",
+      "option3":"Open source platfrom",
+      "option4":  "All of these",
+      "answer": "All of these"
+    },
+    {
+      "question": "Which of the following forms the core kubernetes objects",
+      "option1":  "Pod",
+      "option2": "Service",
+      "option3":"Volume",
+      "option4":  "All of these",
+      "answer": "All of these"
+    },
+    {
+      "question": "What can you deploy on Kubernetes",
+     "option1":  "Containers",
+      "option2":  "Virtual Machines",
+      "option3":  "System Processes",
+      "option4": "None of these",
+      "answer":  "Containers"
+    },
+    {
+      "question": "At its core,Kubernetes is a platform for ___",
+     "option1":  "Packaging software in containers",
+      "option2":  "Provisioning Machines",
+      "option3":  "Running and scheduling container applications on a cluster",
+      "option4": "None of the above",
+      "answer":  "Running and scheduling container applications on a cluster"
+    },
+    {
+      "question": "___ manages assigning nodes to pods depending on resource",
+      "option1":  "Pod",
+      "option2":  "etcd",
+      "option3":  "Kubelet",
+      "option4": "Sheduler",
+      "answer":  "Sheduler"
+    },
+    {
+      "question": "Kubernetes is written in which language",
+      "option1":  "Go",
+      "option2":  "C++",
+      "option3":  "Python",
+      "option4": "Java",
+      "answer": "Go"
+    }
+  ]
+}

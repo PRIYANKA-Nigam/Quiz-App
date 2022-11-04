@@ -1,0 +1,284 @@
+{
+  "response": [
+    {
+      "question": "PHP stands for ",
+      "option1": "Hypertext Preprocessor",
+      "option2": "Pretext Hypertext Preprocessor",
+      "option3": "Personal Home Processor",
+      "option4": "None of the above",
+      "answer": "Hypertext Preprocessor"
+    },
+    {
+      "question": "Variable name in PHP starts with ",
+      "option1": "! (Exclamation)",
+      "option2": "$ (Dollar)",
+      "option3": "& (Ampersand)",
+      "option4": "# (Hash)",
+      "answer": "$ (Dollar)"
+    },
+    {
+      "question": "Which of the following is not a variable scope in PHP?",
+      "option1": "Extern",
+      "option2": "Local",
+      "option3": "Static",
+      "option4": "Global",
+      "answer": "Extern"
+    },
+    {
+      "question": "Which of the following is correct to add a comment in php?",
+      "option1": "& …… &",
+      "option2": "// ……",
+      "option3": "/* …… */",
+      "option4": "Both (b) and (c)",
+      "answer": "Both (b) and (c)"
+    },
+    {
+      "question": "Which of the following is used to display the output in PHP?",
+      "option1":  "echo",
+      "option2": "write",
+      "option3":"print",
+      "option4":  "Both (a) and (c)",
+      "answer": "Both (a) and (c)"
+    },
+    {
+      "question": "Which of the following is the use of strlen() function in PHP?",
+      "option1":  "The strlen() function returns the type of string",
+      "option2":  "The strlen() function returns the length of string",
+      "option3":  "The strlen() function returns the value of string",
+      "option4": "The strlen() function returns both value and type of string",
+      "answer": "The strlen() function returns the length of string"
+    },
+    {
+      "question": "Which of the following is used for concatenation in PHP?",
+       "option1":  "+ (plus)",
+      "option2":  "* (Asterisk)",
+      "option3":  ". (dot)",
+      "option4": "append()",
+      "answer": ". (dot)"
+    },
+    {
+      "question": "Which of the following starts with __ (double underscore) in PHP?",
+      "option1":  "Inbuilt constants",
+      "option2":  "User-defined constants",
+      "option3":  "Magic constants",
+      "option4": "Default constants",
+      "answer": "Magic constants"
+    },
+    {
+      "question": "Which of the following is the use of strpos() function in PHP?",
+      "option1": "The strpos() function is used to search for the spaces in a string",
+      "option2":"The strpos() function is used to search for a number in a string",
+      "option3": "The strpos() function is used to search for a character/text in a string",
+      "option4":"The strpos() function is used to search for a capitalize character in a string",
+      "answer": "The strpos() function is used to search for a character/text in a string"
+    },
+    {
+      "question": "What does PEAR stands for?",
+      "option1":  "PHP extension and application repository",
+      "option2":  "PHP enhancement and application reduce",
+      "option3":  "PHP event and application repository",
+      "option4": "None of the above",
+      "answer":  "PHP extension and application repository"
+    },
+    {
+      "question": "Which of the following is the correct way to create a function in PHP?",
+      "option1":  "Create myFunction()",
+      "option2":  "New_function myFunction()",
+      "option3":  "function myFunction()",
+      "option4": "None of the above",
+      "answer":  "function myFunction()"
+    },
+    {
+      "question": "Which of the following PHP function is used to generate unique id?",
+      "option1":  "id()",
+      "option2": "mdid()",
+      "option3":"uniqueid()",
+      "option4":  "None of the above",
+      "answer": "uniqueid()"
+    },
+    {
+      "question": "Which of the following is the correct way of defining a variable in PHP?",
+       "option1":  "$variable name = value;",
+      "option2": "$variable_name = value;",
+      "option3":"$variable_name = value",
+      "option4":  "$variable name as value;",
+      "answer": "$variable_name = value;"
+    },
+    {
+      "question": "Which of the following is the correct use of the strcmp() function in PHP?",
+     "option1":  "The strcmp() function is used to compare the strings excluding case",
+      "option2":  "The strcmp() function is used to compare the uppercase strings",
+      "option3":  "The strcmp() function is used to compare the lowercase strings",
+      "option4": "The strcmp() function is used to compare the strings including case",
+      "answer":  "The strcmp() function is used to compare the strings including case"
+    },
+    {
+      "question": "What is the use of isset() function in PHP?",
+     "option1":  "The isset() function is used to check whether variable is set or not",
+      "option2":  "The isset() function is used to check whether the variable is free or not",
+      "option3":  "The isset() function is used to check whether the variable is string or not",
+      "option4": "None of the above",
+      "answer":  "The isset() function is used to check whether variable is set or not"
+    },
+    {
+      "question": "What is the use of sprintf() function in PHP?",
+    "option1":  "The sprintf() function is used to print the output of program",
+      "option2":  "The sprintf() function is used to send output to variable",
+      "option3":  "Both of the above",
+      "option4": "None of the above",
+      "answer":  "The sprintf() function is used to send output to variable"
+    },
+    {
+      "question": "Which of the following function displays the information about PHP and its configuration?",
+     "option1":  "php_info()",
+      "option2":  "phpinfo()",
+      "option3":  "info()",
+      "option4": "None of the above",
+      "answer":  "phpinfo()"
+    },
+ {
+      "question": "Which of the following function is used to set cookie in PHP?",
+     "option1":  "createcookie()",
+      "option2":  "makecookie()",
+      "option3":  "setcookie()",
+      "option4": "None of the above",
+      "answer":  "setcookie()"
+    },
+    {
+      "question": "Which of the following function is used to get the ASCII value of a character in PHP?",
+     "option1":  "val()",
+      "option2":  "asc()",
+      "option3":  "ascii()",
+      "option4": "chr()",
+      "answer":  "chr()"
+    },
+    {
+      "question": "Which of the following function is used to unset a variable in PHP?",
+    "option1":  "delete()",
+      "option2":  "unset()",
+      "option3":  "unlink()",
+      "option4": "None of the above",
+      "answer":  "unset()"
+    },
+    {
+      "question": "Which of the following function is used to sort an array in descending order?",
+     "option1":  "sort()",
+      "option2":  "asrot()",
+      "option3":  "dsort()",
+      "option4": "rsort()",
+      "answer":  "rsort()"
+    },
+{
+      "question": "Which of the following is/are the code editors in PHP?",
+     "option1":  "Notepad++",
+      "option2":  "Notepad",
+      "option3":  "Adobe Dreamweaver",
+      "option4": "All of the above",
+      "answer":  "All of the above"
+    },
+    {
+      "question": "Which of the following is used to end a statement in PHP?",
+     "option1":  ". (dot)",
+      "option2":  "; (semicolon)",
+      "option3":  "! (exclamation)",
+      "option4": "/ (slash)",
+      "answer":  "; (semicolon)"
+    },
+    {
+      "question": "Which of the following function in PHP can be used to test the type of any variable?",
+    "option1":  "showtype()",
+      "option2":  "gettype()",
+      "option3":  "settype()",
+      "option4": "None of the above",
+      "answer":  "gettype()"
+    },
+    {
+      "question": "String values in PHP must be enclosed within ",
+     "option1":  "Double Quotes",
+      "option2":  "Single Quotes",
+      "option3":  "Both (a) and (b)",
+      "option4": "None of the above",
+      "answer":  "Both (a) and (b)"
+    },
+{
+      "question": "Which of the following variable name is invalid?",
+     "option1":  "$newVar",
+      "option2":  "$new_Var",
+      "option3":  "$new-var",
+      "option4": "All of the above",
+      "answer":  "$new-var"
+    },
+    {
+      "question": "Which of the following is a built-in function in PHP that adds a value to the end of an array?",
+    "option1":  "array_push()",
+      "option2":  "inend_array()",
+      "option3":  "into_array()",
+      "option4": "None of the above",
+      "answer":  "array_push()"
+    },
+    {
+      "question": "Which of the following function in PHP returns a text in title case from a variable?",
+     "option1":  "toUpper($var)",
+      "option2":  "ucwords($var)",
+      "option3":  "ucword($var)",
+      "option4": "All of the above",
+      "answer":  "ucwords($var)"
+    },
+{
+      "question": "Which of the following function is used to compress a string in PHP?",
+     "option1":  "compress()",
+      "option2":  "zip_compress()",
+      "option3":  "gzcompress()",
+      "option4": "zip()",
+      "answer":  "gzcompress()"
+    },
+    {
+      "question": "What does SPL stands for in PHP?",
+     "option1":  "Standard PHP Library",
+      "option2":  "Simple PHP Library",
+      "option3":  "Simple PHP List",
+      "option4": "None of the above",
+      "answer":  "Standard PHP Library"
+    },
+    {
+      "question": "Which of the following function converts a string to all uppercase?",
+    "option1":  "upper()",
+      "option2":  "uppercase()",
+      "option3":  "struppercase()",
+      "option4": "strtoupper()",
+      "answer":  "strtoupper()"
+    },
+    {
+      "question": "The function in PHP that can be used to concatenate array elements to form a single delimited string is ",
+     "option1":  "implode()",
+      "option2":  "concat()",
+      "option3":  "explode()",
+      "option4": "concatenate()",
+      "answer":  "implode()"
+    },
+{
+      "question": "Which PHP function is used to find the position of the last occurrence of a substring inside another string?",
+     "option1":  "strops()",
+      "option2":  "strrpos()",
+      "option3":  "strtr()",
+      "option4": "None of the above",
+      "answer":  "strrpos()"
+    },
+    {
+      "question": "Which of the following function is used to compute the difference between two arrays in PHP?",
+     "option1":  "diff_array",
+      "option2":  "array_diff",
+      "option3":  "arrays_diff",
+      "option4": "diff_arrays",
+      "answer":  "array_diff"
+    },
+    {
+      "question": "Which PHP function converts an English text datetime into a Unix timestamp?",
+     "option1":  "str_to_time()",
+      "option2":  "strtodate()",
+      "option3":  "strtotime()",
+      "option4": "None of the above",
+      "answer":  "strtotime()"
+    }
+  ]
+}
