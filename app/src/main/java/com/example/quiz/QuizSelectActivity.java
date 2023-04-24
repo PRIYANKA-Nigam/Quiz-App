@@ -19,8 +19,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class QuizSelectActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
-    CircleImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14;
-    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14; String flag="";
+    CircleImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15;
+    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15; String flag="";
     public static void logout(final HistoryActivity historyActivity) {
         AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
         builder.setMessage("Are You Sure You Want to Logout ?");
@@ -74,6 +74,7 @@ public class QuizSelectActivity extends AppCompatActivity {
         c12=findViewById(R.id.c12);c12.setTooltipText("Kubernetes Quiz");
         c13=findViewById(R.id.c13);c13.setTooltipText("Rest API Quiz");
         c14=findViewById(R.id.c14);c14.setTooltipText("PHP Quiz");
+        c15=findViewById(R.id.c15);c15.setTooltipText("Azure Quiz");
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -186,6 +187,14 @@ public class QuizSelectActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        c15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","az");
+                startActivity(intent);
+            }
+        });
         t1=findViewById(R.id.t1);
         t2=findViewById(R.id.t2);
         t3=findViewById(R.id.t3);
@@ -200,6 +209,7 @@ public class QuizSelectActivity extends AppCompatActivity {
         t12=findViewById(R.id.t12);
         t13=findViewById(R.id.t13);
         t14=findViewById(R.id.t14);
+        t15=findViewById(R.id.t15);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -309,6 +319,14 @@ public class QuizSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                 intent.putExtra("flag","p");
+                startActivity(intent);
+            }
+        });
+        t15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","az");
                 startActivity(intent);
             }
         });

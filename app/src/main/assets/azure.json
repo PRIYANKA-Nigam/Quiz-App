@@ -1,0 +1,324 @@
+{
+  "response": [
+    {
+      "question": "When Microsoft Azure came into existence?",
+      "option1": "2004",
+      "option2": "2002",
+      "option3": "2010",
+      "option4": "2001",
+      "answer": "2010"
+    },
+    {
+      "question": "What do you mean by cloud computing? ",
+      "option1": "A term referring to storing data over the internet",
+      "option2": "A platform where you can access huge amounts of data without having a hard disk.",
+      "option3": "A platform where you can access the data from a remote server.",
+      "option4": "All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "How many types of clouds are there in Microsoft Azure?",
+      "option1": "3",
+      "option2": "3",
+      "option3": "4",
+      "option4": "5",
+      "answer": "3"
+    },
+    {
+      "question": "What is the Azure active directory?",
+      "option1": "A directory where you can manage services, and app users from a distributed location.",
+      "option2": "A directory where you can manage services, and apps users from a centralized location.",
+      "option3": "-",
+      "option4": "-",
+      "answer": "A directory where you can manage services, and apps users from a centralized location."
+    },
+    {
+      "question": "Among Windows active directory and Azure active directory which is known to be the oldest version?",
+      "option1":  "Windows Active directory",
+      "option2": "Azure active directory",
+      "option3":"-",
+      "option4":  "-",
+      "answer": "Azure active directory"
+    },
+    {
+      "question": "Which is the foundational cloud platform layer?",
+      "option1":  "IAAS",
+      "option2":  "PAAS",
+      "option3":  "SAAS",
+      "option4": "-",
+      "answer": "IAAS"
+    },
+    {
+      "question": "Who are the main users of IAAS?",
+       "option1":  "Developers",
+      "option2":  "End users",
+      "option3":  "Network architect",
+      "option4": "-",
+      "answer": "Network architect"
+    },
+    {
+      "question": "Which of the following are the advantages of using IAAS?",
+      "option1":  "IAAS provides dynamic scaling.",
+      "option2":  "IAAS enables instant recovery from outages.",
+      "option3":  "IAAS provides us with a monthly operational expense.",
+      "option4": "All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which of the following platforms is used by clients to develop and deploy the application?",
+      "option1": "IAAS",
+      "option2":"PAAS",
+      "option3": "SAAS",
+      "option4":"-",
+      "answer": "PAAS"
+    },
+    {
+      "question": "Who are the main users of PAAS?",
+      "option1":  "Developers",
+      "option2":  "End users",
+      "option3":  "Network architect",
+      "option4": "-",
+      "answer": "Developers"
+    },
+    {
+      "question": "Who are the main users of SAAS?",
+      "option1":  "Developers",
+      "option2":  "End users",
+      "option3":  "Network architect",
+      "option4": "-",
+      "answer": "End users"
+    },
+    {
+      "question": "In which cloud computing service model software is hosted on the cloud and made available to clients?",
+      "option1":  "IAAS",
+      "option2": "PAAS",
+      "option3":"SAAS",
+      "option4":  "-",
+      "answer": "SAAS"
+    },
+    {
+      "question": "Creating managing and removing Azure resources and services is done through the ____ which is a web-based application?",
+       "option1":  "Resources",
+      "option2": "Azure portal",
+      "option3":"Resource manager templates",
+      "option4":  "Resource groups",
+      "answer": "Azure portal"
+    },
+    {
+      "question": "An Azure ____ is a container that holds related resources for an Azure solution.",
+     "option1":  "Resources",
+      "option2":  "Resource Group",
+      "option3":  "Azure portal",
+      "option4": "-",
+      "answer":  "Resource Group"
+    },
+    {
+      "question": " ____ is a set of modules that offer cmdlets to manage Azure.",
+     "option1":  "Azure PowerShell",
+      "option2":  "Azure CLI",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "Azure PowerShell"
+    },
+    {
+      "question": " Which of the following act as the kernel of Azure Service Platform in managing the hardware resources?",
+    "option1":  "Azure PowerShell",
+      "option2":  "Azure CLI",
+      "option3":  "Azure fabric controller",
+      "option4": "Azure orchestrator",
+      "answer":  "Azure fabric controller"
+    },
+    {
+      "question": "How many types of cloud computing are there?",
+     "option1":  "8",
+      "option2":  "4",
+      "option3":  "3",
+      "option4": "6",
+      "answer":  "3"
+    },
+ {
+      "question": "In which of the following cloud computing resources are owned and operated by a third-party cloud service provider?",
+     "option1":  "Public cloud",
+      "option2":  "Private Cloud",
+      "option3":  "Hybrid cloud",
+      "option4": "-",
+      "answer":  "Public cloud"
+    },
+    {
+      "question": "Which storage is used to store huge amounts of unstructured data in Azure?",
+     "option1":  "Azure File storage",
+      "option2":  "Azure blob storage",
+      "option3":  "Azure table storage",
+      "option4": "Azure Archive storage",
+      "answer":  "Azure table storage"
+    },
+    {
+      "question": "Which storage is used in Azure when one wants to share the files between two servers so that they can be accessible on both servers?",
+    "option1":  "Azure queue storage",
+      "option2":  "Azure File storage",
+      "option3":  "Azure blob storage",
+      "option4": "Azure table storage",
+      "answer":  "Azure File storage"
+    },
+    {
+      "question": "Which data storage in Azure has a schema-less design and is used to store the NoSQL data?",
+      "option1":  "Azure File storage",
+      "option2":  "Azure blob storage",
+      "option3":  "Azure table storage",
+      "option4": "Azure Archive storage",
+      "answer":  "Azure table storage"
+    },
+{
+      "question": "With which storage service in Azure, Windows, and Linux can use shared cloud block storage at the same time?",
+     "option1":  "Azure StorSimple",
+      "option2":  "Azure site recovery",
+      "option3":  "Azure disk storage",
+      "option4": "Azure data box",
+      "answer":  "Azure disk storage"
+    },
+    {
+      "question": "What does CDN for in Azure?",
+     "option1":  "Command dictionary network",
+      "option2":  "Common dictionary network",
+      "option3":  "Content delivery network",
+      "option4": "Content dominates network",
+      "answer":  "Content delivery network"
+    },
+    {
+      "question": "In which replication strategy of Azure data replicated three times within a single data center",
+    "option1":  "Locally-Redundant Storage",
+      "option2":  "Zone-Redundant Storage",
+      "option3":  "Geo-Redundant Storage",
+      "option4": "Read-Access Geo-Redundant Storage.",
+      "answer":  "Locally-Redundant Storage"
+    },
+    {
+      "question": "Which Azure service provides the record of events that have been carried out on a specific resource?",
+     "option1":  "Azure activity log",
+      "option2":  "Azure resources",
+      "option3":  "Azure resource groups",
+      "option4": "Azure resource manager",
+      "answer":  "Azure activity log"
+    },
+{
+      "question": "What does CORS stand for in Azure?",
+     "option1":  "Combine oriented relation system",
+      "option2":  "Combine object relation service",
+      "option3":  "Cross-origin resource service",
+      "option4": "Combine origin resource service",
+      "answer":  "Cross-origin resource service"
+    },
+    {
+      "question": "Can you write special characters while naming the container?",
+     "option1":  "YES",
+      "option2":  "NO",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "NO"
+    },
+    {
+      "question": "In Azure storage services, the Azure table stores which form of data?",
+    "option1":  "Structured data",
+      "option2":  "Unstructured data",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "Structured data"
+    },
+    {
+      "question": "Which service in Azure accomplishes logging and offers metrics data for a storage account?",
+     "option1":  "Azure Storage services",
+      "option2":  "Azure storage analytics services",
+      "option3":  "Azure compute services",
+      "option4": "-",
+      "answer":  "Azure storage analytics services"
+    },
+{
+      "question": "What is known to be the fundamental building block of Azure network services?",
+     "option1":  "Azure virtual network",
+      "option2":  "Azure network security",
+      "option3":  "Azure network interface",
+      "option4": "Azure storage emulator",
+      "answer":  "Azure virtual network"
+    },
+    {
+      "question": "Which Azure service protects the workload in the virtual network from DDoS attacks in Azure?",
+     "option1":  "Azure virtual network",
+      "option2":  "Azure network security",
+      "option3":  "Azure DDoS protection",
+      "option4": "Azure Firewall protection",
+      "answer":  "Azure DDoS protection"
+    },
+    {
+      "question": "Among NSG and Firewall which is more expensive in Azure?",
+    "option1":  "Network security group",
+      "option2":  "Firewall",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "Firewall"
+    },
+    {
+      "question": "Which service in Azure aids us to distribute the stream of traffic evenly between application servers?",
+     "option1":  "Network service group",
+      "option2":  "Traffic manager",
+      "option3":  "Firewall",
+      "option4": "Load balancer",
+      "answer":  "Load balancer"
+    },
+{
+      "question": "Can you have two same names of networks within the network security group?",
+      "option1":  "YES",
+      "option2":  "NO",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "NO"
+    },
+    {
+      "question": "Which service in Azure acts as an interconnection between a Virtual Machine and the underlying software network?",
+     "option1":  "Network service group",
+      "option2":  "Traffic manager",
+      "option3":  "Firewall",
+      "option4": "Azure network interface",
+      "answer":  "Azure network interface"
+    },
+    {
+      "question": "Which Azure service allows us to connect two VNet in the same or across regions?",
+    "option1":  "Network service group",
+      "option2":  "VNet peering",
+      "option3":  "Global peering",
+      "option4": "VNet",
+      "answer":  "VNet peering"
+    },
+    {
+      "question": "Which Azure service acts as a middleman on both sides of the virtual networks?",
+     "option1":  "VPN gateway",
+      "option2":  "VNet peering",
+      "option3":  "Global peering",
+      "option4": "VNet",
+      "answer":  "VNet peering"
+    },
+    {
+      "question": "How many categories are there of Azure compute services?",
+     "option1":  "6",
+      "option2":  "5",
+      "option3":  "4",
+      "option4": "3",
+      "answer":  "3"
+    },
+    {
+      "question": "Which service of Azure is used for hosting web applications REST APIs and mobile backends?",
+     "option1":  "Azure App service",
+      "option2":  "Azure Virtual machines",
+      "option3":  "Azure service fabric",
+      "option4": "-",
+      "answer":  "Azure App service"
+    },
+    {
+      "question": "Is Azure app service a PAAS or IAAS?",
+     "option1":  "PAAS",
+      "option2":  "SAAS",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "PAAS"
+    }
+  ]
+}

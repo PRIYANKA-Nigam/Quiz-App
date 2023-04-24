@@ -7,13 +7,15 @@
     android:id="@+id/hdraw"
     tools:context=".HistoryActivity">
     <LinearLayout android:layout_width="match_parent"
-        android:layout_height="match_parent" android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <include layout="@layout/main_toolbar" />
 <ListView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:divider="#000000"
     android:dividerHeight="10dp"
+    android:background="@android:color/holo_orange_light"
     android:showDividers="beginning|middle|end"
     android:id="@+id/ll"/>
         <LinearLayout

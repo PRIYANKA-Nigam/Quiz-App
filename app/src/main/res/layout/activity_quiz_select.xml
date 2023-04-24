@@ -390,6 +390,32 @@
                 android:shadowRadius="13"
                 android:textAlignment="center"
                 android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/c15"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="15dp"
+                android:src="@drawable/azure" />
+            <TextView
+                android:id="@+id/t15"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:text="Azure Cloud"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
