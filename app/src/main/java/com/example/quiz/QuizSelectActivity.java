@@ -59,7 +59,7 @@ public class QuizSelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_select);
         drawerLayout=(DrawerLayout)findViewById(R.id.draw);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);// ss not allowed
         c1=findViewById(R.id.c1);c1.setTooltipText("C Programming Quiz");
         c2=findViewById(R.id.c2);c2.setTooltipText("C++ Programming Quiz");
         c3=findViewById(R.id.c3);c3.setTooltipText("Java Programming Quiz");
