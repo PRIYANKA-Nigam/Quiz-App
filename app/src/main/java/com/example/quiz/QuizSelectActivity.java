@@ -19,41 +19,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class QuizSelectActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
-    CircleImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15;
-    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15; String flag="";
-    public static void logout(final HistoryActivity historyActivity) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(historyActivity);builder.setTitle("Logout");
-        builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                historyActivity.finishAffinity(); System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
-    public static void logout(final StartQuizActivity mainActivity3) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
-        builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainActivity3.finishAffinity(); System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
-    public static void logout(final DarkModeActivity darkModeActivity) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(darkModeActivity);builder.setTitle("Logout");
-        builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                darkModeActivity.finishAffinity(); System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
+    CircleImageView c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16;
+    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16; String flag="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +43,7 @@ public class QuizSelectActivity extends AppCompatActivity {
         c13=findViewById(R.id.c13);c13.setTooltipText("Rest API Quiz");
         c14=findViewById(R.id.c14);c14.setTooltipText("PHP Quiz");
         c15=findViewById(R.id.c15);c15.setTooltipText("Azure Quiz");
+        c16=findViewById(R.id.c16);c16.setTooltipText("JSP Quiz");
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -195,6 +164,14 @@ public class QuizSelectActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        c16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","js");
+                startActivity(intent);
+            }
+        });
         t1=findViewById(R.id.t1);
         t2=findViewById(R.id.t2);
         t3=findViewById(R.id.t3);
@@ -210,6 +187,7 @@ public class QuizSelectActivity extends AppCompatActivity {
         t13=findViewById(R.id.t13);
         t14=findViewById(R.id.t14);
         t15=findViewById(R.id.t15);
+        t16=findViewById(R.id.t16);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -330,6 +308,14 @@ public class QuizSelectActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        t16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                intent.putExtra("flag","js");
+                startActivity(intent);
+            }
+        });
     }
     public void ClickMenu(View view){ openDrawer(drawerLayout); }
     public static void openDrawer(DrawerLayout drawerLayout) { drawerLayout.openDrawer(GravityCompat.START); }
@@ -343,17 +329,10 @@ public class QuizSelectActivity extends AppCompatActivity {
     public void ClickHistory(View view){redirectActivity(this,HistoryActivity.class);}
     public void ClickDark(View view){redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
-        logout(this);
+        MainActivity.logout(this);
     }
 
-    public static void logout(final QuizSelectActivity mainActivity) { AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity);
-        builder.setTitle("Logout");builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainActivity.finishAffinity();System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() { @Override
-        public void onClick(DialogInterface dialog, int which) { dialog.dismiss(); }}); builder.show(); }
+
     public static void redirectActivity(Activity activity, Class aclass) { Intent intent=new Intent(activity,aclass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); activity.startActivity(intent); } @Override
     protected void onPause() { super.onPause(); closeDrawer(drawerLayout); }

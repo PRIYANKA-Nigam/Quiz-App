@@ -105,6 +105,8 @@ ImageView imageView;int flag=0; String news="",col="";
             type="PHP";
         if (fl.equals("az"))
             type="Azure";
+        if (fl.equals("js"))
+            type="JSP";
         Calendar calendar =Calendar.getInstance();
 //        SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 //        String curDate=format.format(calendar.getTime());

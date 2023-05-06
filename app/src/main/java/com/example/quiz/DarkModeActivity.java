@@ -59,6 +59,6 @@ CardView cardView; Switch aSwitch; DrawerLayout drawerLayout;
     public void ClickHistory(View view){QuizSelectActivity.redirectActivity(this,HistoryActivity.class);}
     public void ClickDark(View view){recreate();}
     public void ClickLogout(View view){
-        QuizSelectActivity.logout(this);
+        MainActivity.logout(this);
     }
 }

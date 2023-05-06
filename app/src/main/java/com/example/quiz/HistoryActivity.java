@@ -215,6 +215,6 @@ private void loadData() {
     public void ClickHistory(View view){recreate();}
     public void ClickDark(View view){QuizSelectActivity.redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
-        QuizSelectActivity.logout(this);
+        MainActivity.logout(this);
     }
 }

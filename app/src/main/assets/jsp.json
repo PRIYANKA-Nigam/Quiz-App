@@ -1,0 +1,172 @@
+{
+  "response": [
+    {
+      "question": "This object can be used to access other implicit objects in JSP.",
+      "option1": "request",
+      "option2": "page",
+      "option3": "context",
+      "option4": "pageContext",
+      "answer": "pageContext"
+    },
+    {
+      "question": "What JSP stands for?",
+      "option1": "Java Service Programming",
+      "option2": "Java Server Programming",
+      "option3": "Java Service Pages",
+      "option4": "Java Server Pages",
+      "answer": " Java Server Pages"
+    },
+    {
+      "question": "Which of the following attribute is used to have uncaught run-time exceptions automatically forwarded to an error processing page?",
+      "option1": "error",
+      "option2": "errorPage",
+      "option3": "exception",
+      "option4": "exceptionPage",
+      "answer": "errorPage"
+    },
+    {
+      "question": "Which of the following is true about extends Attribute?",
+      "option1":  "The extends attribute can be used to define a subclass of generated servlet.",
+      "option2":  "The extends attribute is used to specify a superclass that the generated servlet must extend.",
+      "option3":  "Both of the above.",
+      "option4": "None of the above.",
+      "answer": "The extends attribute is used to specify a superclass that the generated servlet must extend."
+    },
+    {
+      "question": "Which of the following is true about isThreadSafe Attribute?",
+      "option1":  "The isThreadSafe option marks a page as being thread-safe.",
+      "option2": "If you set the isThreadSafe option to false, the JSP engine makes sure that only one thread at a time is executing your JSP.",
+      "option3":"By default, all JSPs are considered thread-safe.",
+      "option4":  "All of the above.",
+      "answer": "All of the above."
+    },
+    {
+      "question": "What JSTL stands for?",
+      "option1":  "JavaServer Pages Standard Tag Library",
+      "option2": "JSP Tag Library",
+      "option3": "Java Standard Tag Library",
+      "option4": "None of the above.",
+      "answer": "JavaServer Pages Standard Tag Library"
+    },
+    {
+      "question": "Which of the following is true about <c:param> tag?",
+      "option1": "The <c:param> tag allows proper URL request parameter to be specified with URL.",
+      "option2":"The <c:param> tag does any necessary URL encoding required",
+      "option3": "None of the above",
+      "option4":"Both of the above.",
+      "answer": "Both of the above."
+    },
+    {
+      "question": "Which of the following is a server side technology?",
+      "option1":  "html",
+      "option2":  "jsp",
+      "option3":  "javaScript",
+      "option4": "css",
+      "answer":  "jsp"
+    },
+    {
+      "question": "Which is the methods of generated Servlet?",
+      "option1": "jspInit()",
+      "option2":"_jspService()",
+      "option3": "jspDestroy()",
+      "option4":"All of the above",
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which of the following method can be used to read a form parameter in JSP?",
+      "option1":  "request.getParameter()",
+      "option2":  "response.getParameter()",
+      "option3":  "request.getValue()",
+      "option4": "response.getValue()",
+      "answer":  "request.getParameter()"
+    },
+    {
+      "question": "What happens when autoFlush is set to a value false?",
+      "option1":  "JSP container throws exceptionto indicate buffer overflow when buffer is filled.",
+      "option2":  "JSP container flushed the buffered output when buffer is filled.",
+      "option3":  " Both of the above.",
+      "option4": "None of the above",
+      "answer":  "JSP container throws exceptionto indicate buffer overflow when buffer is filled."
+    },
+    {
+      "question": "Which of the following is true about <jsp:getProperty> action?",
+      "option1":  "The getProperty action gets the properties of a bean.",
+      "option2":  "The getProperty action converts the property of a bean to a string, and finally inserts it into the output.",
+      "option3":  "Both of the above.",
+      "option4": "None of the above.",
+      "answer":  "Both of the above."
+    },
+    {
+      "question": "What is the use of <c:catch> tag?",
+      "option1":  "to catch any Throwable that occurs in its body and optionally exposes it.",
+      "option2":  "to catch the runtime error and redirect to error page.",
+      "option3":  "Both of the above.",
+      "option4": "None of the above",
+      "answer":  "to catch any Throwable that occurs in its body and optionally exposes it."
+    },
+    {
+      "question": "What is the correct signature of jspDestroy() method of HttpJspPage class?",
+     "option1":  "void jspDestroy(HTTPRequest request, HTTPResponse response)",
+      "option2":  "void jspDestroy(HTTPRequest request, HTTPResponse response) throws ServletException, IOException",
+      "option3":  "void jspDestroy()",
+      "option4": "void jspDestroy() throws ServletException, IOException",
+      "answer":  "void jspDestroy()"
+    },
+    {
+      "question": "What will happen if isScriptingEnabled attribute is set as false?",
+     "option1":  "A translation-time error will be raised if the JSP uses any scriptlets, expressions (non-EL), or declarations.",
+      "option2":  "JSP container will ignore the any scriptlets, expressions (non-EL), or declarations similar to comments.",
+      "option3":  "Both of the above.",
+      "option4": "None of the above",
+      "answer":  "A translation-time error will be raised if the JSP uses any scriptlets, expressions (non-EL), or declarations."
+    },
+    {
+      "question": "What technique is used for the authentication mechanism in the servlet specification?",
+     "option1":  "Role Based Authentication",
+      "option2":  "Form Based Authentication",
+      "option3":  "Both A & B",
+      "option4": "None of the above",
+      "answer":  "Role Based Authentication"
+    },
+    {
+      "question": "Which attribute specifies a JSP page that should process any exceptions thrown but not caught in the current page?",
+     "option1":  "The ErrorPage Attribute",
+      "option2":  "The IsErrorPage Attribute",
+      "option3":  "Both A & B",
+      "option4": "None of the above",
+      "answer":  "The ErrorPage Attribute"
+    },
+    {
+      "question": "The ASP and JSP technologies are quite similar in the way they support the creation of Dynamic pages, using HTML templates, scripting code and components for business logic.",
+     "option1":  "True",
+      "option2":  "False",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "True"
+    },
+    {
+      "question": "In JSP Action tags which tags are used for bean development?",
+     "option1":  "jsp:useBean",
+      "option2":  "jsp:setPoperty",
+      "option3":  "jsp:getProperty",
+      "option4": "All mentioned above",
+      "answer":  "All mentioned above"
+    },
+    {
+      "question": "JSPs eventually are compiled into Java servlets, you can do as much with JSPs as you can do with Java servlets.",
+     "option1":  "True",
+      "option2":  "False",
+      "option3":  "-",
+      "option4": "-",
+      "answer":  "True"
+    },
+    {
+      "question": "Which technology do we mix our business logic with the presentation logic?",
+     "option1":  "Servlet",
+      "option2":  "JSP",
+      "option3":  "Both A & B",
+      "option4": "None of the above",
+      "answer":  "Servlet"
+    }
+  ]
+}

@@ -61,6 +61,6 @@ Button button;
     public void ClickHistory(View view){QuizSelectActivity.redirectActivity(this,HistoryActivity.class);}
     public void ClickDark(View view){QuizSelectActivity.redirectActivity(this,DarkModeActivity.class);}
     public void ClickLogout(View view){
-        QuizSelectActivity.logout(this);
+        MainActivity.logout(this);
     }
 }
